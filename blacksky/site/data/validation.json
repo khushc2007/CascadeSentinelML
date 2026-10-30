@@ -1,0 +1,137 @@
+{
+ "schema": "bsx.validation/1",
+ "generatedAt": "2026-10-30T09:05:38Z",
+ "commit": "7c66d12cf4f11c3e30d0daeefafb61f046717a5a",
+ "dirty": false,
+ "command": "python scripts/blacksky_validate.py",
+ "environment": {
+  "python": "3.13.17",
+  "node": "v22.22.0",
+  "qiskit": "2.6.1",
+  "qiskit_aer": "0.18.0",
+  "sklearn": "1.9.1",
+  "playwright": null
+ },
+ "suites": [
+  {
+   "id": "sync",
+   "name": "Shared copies byte-identical to app/",
+   "command": "python scripts/build_blacksky.py --check",
+   "status": "passed",
+   "passed": 1,
+   "failed": 0,
+   "skipped": 0,
+   "durationS": 0.06111311912536621,
+   "output": "blacksky shared files in sync",
+   "covers": [
+    "original project isolation",
+    "data provenance"
+   ]
+  },
+  {
+   "id": "node-blacksky",
+   "name": "BLACKSKY unit tests (node)",
+   "command": "node --test blacksky/test/*.test.mjs",
+   "status": "passed",
+   "passed": 35,
+   "failed": 0,
+   "skipped": 0,
+   "durationS": 3.0396909713745117,
+   "covers": [
+    "cascade stages and scoring",
+    "quantum engine closed forms",
+    "combinatorics, statistics, features vs engine, splits, search methods"
+   ]
+  },
+  {
+   "id": "node-app",
+   "name": "Original application unit tests (node, unchanged)",
+   "command": "node --test app/test/*.test.mjs",
+   "status": "passed",
+   "passed": 29,
+   "failed": 0,
+   "skipped": 0,
+   "durationS": 6.647364854812622,
+   "covers": [
+    "original project still passes"
+   ]
+  },
+  {
+   "id": "py-integration",
+   "name": "BLACKSKY integration and cross-library checks",
+   "command": "pytest -q tests/integration/test_blacksky.py tests/integration/test_blacksky_quantum.py tests/integration/test_blacksky_ml.py",
+   "status": "passed",
+   "passed": 14,
+   "failed": 0,
+   "skipped": 0,
+   "durationS": 9.910010814666748,
+   "summary": "14 passed, 1 warning in 8.12s",
+   "covers": [
+    "Qiskit Statevector / depth / QASM",
+    "Aer density matrix with noise",
+    "scikit-learn metrics and logistic regression",
+    "BLACKSKY API bounds",
+    "deployment config"
+   ]
+  },
+  {
+   "id": "e2e",
+   "name": "End-to-end browser journeys (Chromium, software WebGL)",
+   "command": "pytest -q tests/e2e/test_blacksky_e2e.py",
+   "status": "passed",
+   "passed": 18,
+   "failed": 0,
+   "skipped": 0,
+   "durationS": 170.68978714942932,
+   "summary": "18 passed in 169.18s (0:02:49)",
+   "covers": [
+    "five workspaces",
+    "workers keep the page responsive",
+    "registry and re-run",
+    "phone layout",
+    "API failure handling"
+   ]
+  },
+  {
+   "id": "lint",
+   "name": "Claims lint (banned phrases)",
+   "command": "python scripts/claims_lint.py",
+   "status": "passed",
+   "passed": 1,
+   "failed": 0,
+   "skipped": 0,
+   "durationS": 0.08556032180786133,
+   "output": "claims lint: 0 violation(s)",
+   "covers": [
+    "no unsupported claims in text"
+   ]
+  },
+  {
+   "id": "types",
+   "name": "Type check of js/sci and js/q (tsc, @ts-check, strict)",
+   "command": "blacksky/tools/node_modules/.bin/tsc -p blacksky/tools/tsconfig.json",
+   "status": "passed",
+   "passed": 1,
+   "failed": 0,
+   "skipped": 0,
+   "durationS": 2.642350196838379,
+   "output": "",
+   "covers": [
+    "typed contracts"
+   ]
+  },
+  {
+   "id": "isolation",
+   "name": "Original app/ and doomsday/ unchanged since ba8d133",
+   "command": "git diff --stat ba8d133 -- app doomsday",
+   "status": "passed",
+   "passed": 1,
+   "failed": 0,
+   "skipped": 0,
+   "output": "",
+   "covers": [
+    "original project isolation"
+   ]
+  }
+ ]
+}
