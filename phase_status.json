@@ -1,0 +1,190 @@
+{
+  "project": "Grid Doomsday Finder",
+  "team": "Cascade Sentinel",
+  "status_date": "2026-10-27",
+  "latest_milestone": "Phase 14 (release)",
+  "phase_numbering_source": "docs/PHASES_7_14.md (7-14 assigned from V2 18 and 26 in this session)",
+  "tests": {
+    "python": {
+      "command": "python -m pytest -q",
+      "passed": 255,
+      "failed": 0,
+      "skipped": 2,
+      "skips": [
+        "tests/helpers.py: qiskit installed, NOT_RUN-path test not applicable (x2)"
+      ],
+      "independently_reproduced": true,
+      "includes": "tests/e2e browser journeys (3 workbench + 6 BLACKSKY) and tests/integration/test_blacksky.py (3) when Playwright + Chromium, node and fastapi/uvicorn are installed"
+    },
+    "javascript": {
+      "command": "node --test app/test/*.test.mjs",
+      "passed": 29,
+      "failed": 0,
+      "cascade_parity_runs": 700
+    },
+    "claims_lint": {
+      "command": "python scripts/claims_lint.py",
+      "violations": 0
+    },
+    "blacksky_javascript": {
+      "command": "node --test blacksky/test/*.test.mjs",
+      "passed": 12,
+      "failed": 0
+    }
+  },
+  "data": {
+    "source": "official MATPOWER 8.1",
+    "commit": "1a828c7",
+    "cases": [
+      "case14",
+      "case30",
+      "case118"
+    ],
+    "ratings": "synthetic"
+  },
+  "experiments": {
+    "E0": "EXECUTED",
+    "E1": "EXECUTED",
+    "E2": "PARTIAL",
+    "E3": "PARTIAL",
+    "E4": "EXECUTED",
+    "E5": "EXECUTED",
+    "E6": "EXECUTED",
+    "E7": "EXECUTED",
+    "E8": "EXECUTED",
+    "E9": "EXECUTED",
+    "E10": "EXECUTED",
+    "E11": "EXECUTED",
+    "E12": "EXECUTED",
+    "E13": "NOT_RUN",
+    "E14": "EXECUTED",
+    "E15": "EXECUTED",
+    "E16": "EXECUTED"
+  },
+  "not_run": {
+    "E13": "no IBM Quantum credentials; optional in V2",
+    "E2_ieee118_k4": "exhaustive DC ~96 core-h",
+    "E3_ieee118_k3_AC": "exhaustive AC ~21 core-h",
+    "E3b_k4": "needs k=4 table"
+  },
+  "resource_model": "ESTIMATED; optional partial kappa calibration from E14 toy micro-oracle; not fully calibrated",
+  "ibm_quantum_hardware_evidence": false,
+  "aer_runs": "EXECUTED (classical simulation; E4, E5, E10)",
+  "quantum_advantage_claimed": false,
+  "frontend_present": true,
+  "backend_api_present": true,
+  "js_port_present": true,
+  "phases": {
+    "1": "implemented_with_qualifications",
+    "2": "implemented_with_qualifications",
+    "3": "implemented_with_qualifications",
+    "4": "implemented_with_qualifications",
+    "5": "implemented_with_qualifications",
+    "6": "implemented_with_qualifications",
+    "7": "complete: pipeline + E0-E3, E6-E8, E11 (E2, E3 PARTIAL)",
+    "8": "complete: E4, E5, BE Dicke; E13 NOT_RUN",
+    "9": "complete: JS port + parity tests",
+    "10": "complete: E9, E10, E12",
+    "11": "complete: E14, E15",
+    "12": "complete: FastAPI",
+    "13": "complete: offline web demo",
+    "14": "complete: E16, claims lint, regression, release"
+  },
+  "truth_tables": "results/phase7/tables (git-ignored, shipped as a separate zip; regenerate with make truth)",
+  "frontend": {
+    "workspaces": [
+      "Investigate (3-D workbench, Three.js r160)",
+      "Research (E0-E16 results)"
+    ],
+    "engines": [
+      "browser DC (JS port)",
+      "precomputed AC (stored Python runs)",
+      "API DC/AC when served"
+    ],
+    "docs": [
+      "docs/FRONTEND_AUDIT.md",
+      "docs/DESIGN_SYSTEM.md",
+      "docs/ARCHITECTURE.md",
+      "docs/UI_REVIEW_CYCLE_1.md",
+      "docs/UI_REVIEW_CYCLE_2.md",
+      "docs/JUDGE_READINESS_REVIEW.md",
+      "docs/FRONTEND_VALIDATION_REPORT.md",
+      "docs/FUTURE_ROADMAP.md"
+    ],
+    "unverified": [
+      "hosted page CDN import of three.js and fonts (sandbox cannot reach the CDN)",
+      "GPU frame rate (only software WebGL measured)",
+      "API request cancellation path"
+    ]
+  },
+  "blacksky": {
+    "name": "BLACKSKY COMMAND · OMEGA",
+    "app_dir": "blacksky/site",
+    "entry": "blacksky/site/index.html",
+    "routes": [
+      "#theater",
+      "#quantum",
+      "#arena",
+      "#ml",
+      "#evidence",
+      "#autopsy (alias of #theater)"
+    ],
+    "server": "blacksky/serve.py (site at /, unchanged API at /api, BLACKSKY API at /bsapi: Qiskit transpile, bounded)",
+    "deploy": {
+      "vercel_root_directory": "blacksky/site",
+      "framework": "Other",
+      "build_command": null,
+      "output_directory": ".",
+      "env": []
+    },
+    "shared_sync": "scripts/build_blacksky.py --check",
+    "reviews": [
+      "blacksky/REVIEW_1.md",
+      "blacksky/REVIEW_2.md",
+      "blacksky/REVIEW_3.md",
+      "blacksky/REVIEW_OMEGA.md (passes 1-4)"
+    ],
+    "deployed_to_vercel": false,
+    "published_artifact": "separate private claude.ai artifact (first 2026-10-27; republished with OMEGA 2026-10-30)",
+    "performance_measured": "SwiftShader software WebGL, 2 vCPU, no GPU: cold load 1.97 s; workspace switch 17-67 ms incl. lazy module load; ML training on IEEE-118 (17,205 pairs) 11.9 s in a worker with one 70 ms main-thread long task; GPU not measured",
+    "omega": {
+      "base_commit": "ba8d133",
+      "progress": "blacksky/BLACKSKY_PROGRESS.md",
+      "validation_report": "blacksky/site/data/validation.json (scripts/blacksky_validate.py)",
+      "workspaces": [
+        "Cascade Theater",
+        "Quantum Lab",
+        "Algorithm Arena",
+        "ML Risk Observatory",
+        "Evidence & Resource Lab"
+      ],
+      "not_available": [
+        "quantum hardware",
+        "Grover on the cascade objective (no reversible oracle)",
+        "/bsapi transpile on static hosting",
+        "GPU performance measurement",
+        "deployment (no hosting credentials)"
+      ]
+    }
+  },
+  "original_app_2026_10_27": {
+    "view_modes": [
+      "spatial",
+      "focus",
+      "grid",
+      "schematic"
+    ],
+    "context_city": "app/js/three/context.js (decorative, clearance-tested)",
+    "branch_encoding": "app/js/three/branchviz.js",
+    "inspector_params": "app/data/params_*.json via scripts/build_case_params.py (--check in tests)",
+    "bengaluru_explorer": {
+      "code": "app/js/geo",
+      "map": "MapLibre GL 4.7.1 vendored (BSD-3)",
+      "data": "OpenStreetMap via Overpass API at runtime (ODbL); file import; IndexedDB cache",
+      "real_data_loaded_in_this_environment": false,
+      "tested_with": "tests/fixtures/overpass_synthetic_fixture.json (synthetic)"
+    },
+    "reviews": "docs/ORIGINAL_REVIEWS_ABC.md",
+    "artifact_version": 4
+  }
+}

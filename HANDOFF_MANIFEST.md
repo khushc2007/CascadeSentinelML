@@ -1,0 +1,250 @@
+> **Superseded (2026-10-23).** This guide describes the Phase-6 snapshot it was written for. Phases 7–14 are now implemented; current state is in
+> `PROJECT_STATUS.md`, `phase_status.json`, `docs/PHASES_7_14.md` and `results/phase7/REPORT.md`. Statements below such as "no API or frontend",
+> "official IEEE-30/118 data absent" and "Aer NOT RUN" no longer hold.
+
+# Handoff Manifest
+
+## Package
+`Grid_Doomsday_Finder_COMPLETE_HANDOFF.zip`
+
+## Included
+This archive contains the complete source snapshot extracted from the user-supplied `grid-doomsday-finder-phase7-wip (1).zip`, plus these handoff files:
+- `CLAUDE_HANDOFF_GUIDE.md`
+- `PROJECT_STATUS.md`
+- `NEXT_SESSION_PROMPT.md`
+- `HANDOFF_MANIFEST.md`
+- `HANDOFF_CHECKSUMS.txt`
+- `phase_status.json`
+
+Included categories:
+- Python package/source modules under `doomsday/`
+- Config and packaging files (`configs/`, `pyproject.toml`, `Makefile`, `.gitignore`)
+- Documentation under `docs/`
+- Scripts under `scripts/`
+- Tests under `tests/`
+- Saved diagnostics, benchmark outputs, test logs, resource-model JSON/figures, and truth-table artifacts under `results/`
+- README and this continuation documentation
+
+## Exclusions and omissions
+- The original supplied ZIP did not contain `.git/`; commit history is **not available in this snapshot**.
+- The original supplied ZIP did not contain the V2 solution design PDF. It is therefore not included; obtain it separately and place it in `docs/reference/` if available.
+- No frontend/dashboard or backend/API source was present in the supplied snapshot.
+- No official MATPOWER IEEE-30 or IEEE-118 files were present.
+- No virtual environments, caches, `node_modules`, or temporary build directories are packaged.
+- No `.env` secrets were detected by filename screening; no credentials should be added to this archive.
+
+## File inventory
+Count of files included: 215
+- `.gitignore`
+- `CLAUDE_HANDOFF_GUIDE.md`
+- `Makefile`
+- `NEXT_SESSION_PROMPT.md`
+- `PROJECT_STATUS.md`
+- `README.md`
+- `configs/default.yaml`
+- `docs/CASCADE_DECISIONS.md`
+- `docs/CLASSICAL_METHODS.md`
+- `docs/CONTINGENCY_ORDERING.md`
+- `docs/DATA_PROVENANCE.md`
+- `docs/INTERFACE.md`
+- `docs/PROTECTED_BASELINE.json`
+- `docs/QUANTUM_TIERS.md`
+- `docs/RATING_EXTENSION.md`
+- `docs/RESOURCE_MODEL.md`
+- `docs/WORKED_EXAMPLES.md`
+- `doomsday/__init__.py`
+- `doomsday/classical/__init__.py`
+- `doomsday/classical/api.py`
+- `doomsday/classical/methods_basic.py`
+- `doomsday/classical/methods_structural.py`
+- `doomsday/classical/structural.py`
+- `doomsday/config.py`
+- `doomsday/experiments/__init__.py`
+- `doomsday/experiments/benchmark.py`
+- `doomsday/experiments/common.py`
+- `doomsday/experiments/framework.py`
+- `doomsday/experiments/ranking_metrics.py`
+- `doomsday/gridtwin/__init__.py`
+- `doomsday/gridtwin/ac.py`
+- `doomsday/gridtwin/base.py`
+- `doomsday/gridtwin/cascade.py`
+- `doomsday/gridtwin/contingency.py`
+- `doomsday/gridtwin/data/MANIFEST.json`
+- `doomsday/gridtwin/data/case14.m`
+- `doomsday/gridtwin/dc.py`
+- `doomsday/gridtwin/identity.py`
+- `doomsday/gridtwin/islanding.py`
+- `doomsday/gridtwin/loader.py`
+- `doomsday/gridtwin/model.py`
+- `doomsday/gridtwin/ratings.py`
+- `doomsday/gridtwin/scaling.py`
+- `doomsday/gridtwin/security.py`
+- `doomsday/gridtwin/severity.py`
+- `doomsday/oracle/__init__.py`
+- `doomsday/oracle/ac_oracle.py`
+- `doomsday/oracle/cache.py`
+- `doomsday/oracle/cascade_oracle.py`
+- `doomsday/oracle/dc_oracle.py`
+- `doomsday/oracle/factory.py`
+- `doomsday/oracle/hashing.py`
+- `doomsday/oracle/interface.py`
+- `doomsday/oracle/table_oracle.py`
+- `doomsday/qsearch/__init__.py`
+- `doomsday/qsearch/accounting.py`
+- `doomsday/qsearch/aer_runner.py`
+- `doomsday/qsearch/bbht.py`
+- `doomsday/qsearch/circuits.py`
+- `doomsday/qsearch/counting.py`
+- `doomsday/qsearch/dh_gas.py`
+- `doomsday/qsearch/dicke.py`
+- `doomsday/qsearch/emulation.py`
+- `doomsday/qsearch/grover.py`
+- `doomsday/qsearch/predicate.py`
+- `doomsday/qsearch/qiskit_export.py`
+- `doomsday/qsearch/statevec.py`
+- `doomsday/qsearch/toy.py`
+- `doomsday/resource/__init__.py`
+- `doomsday/resource/calibration.py`
+- `doomsday/resource/components.py`
+- `doomsday/resource/crossover.py`
+- `doomsday/resource/params.py`
+- `doomsday/resource/prep.py`
+- `doomsday/resource/qubits.py`
+- `doomsday/resource/scenarios.py`
+- `phase_status.json`
+- `pyproject.toml`
+- `results/phase1_rating_feasibility.json`
+- `results/phase1_test_log.txt`
+- `results/phase2_cascade_diagnostics.json`
+- `results/phase2_test_log.txt`
+- `results/phase3_oracle_diagnostics.json`
+- `results/phase3_test_log.txt`
+- `results/phase4/bench_ieee14_dc_k2.json`
+- `results/phase4/bench_ieee14_dc_k3.json`
+- `results/phase4/bench_ieee14_dc_k4.json`
+- `results/phase4/bnb_unbudgeted_ieee14.json`
+- `results/phase4/summary_ieee14_dc.json`
+- `results/phase4_test_log.txt`
+- `results/phase5/aer_noise_toy_grover_6_2.json`
+- `results/phase5/aer_toy_grover_6_2.json`
+- `results/phase5/aer_toy_grover_8_3.json`
+- `results/phase5/tierB_dh_ieee14.json`
+- `results/phase5/worked_examples.json`
+- `results/phase5_test_log.txt`
+- `results/phase6/fig_heatmap_Nstar.png`
+- `results/phase6/fig_time_vs_k.png`
+- `results/phase6/fig_tornado.png`
+- `results/phase6/measured_inputs_ieee14.json`
+- `results/phase6/resource_model.json`
+- `results/phase6_test_log.txt`
+- `results/tables/ieee14_ac_k2_c79cc5869a74/S.npy`
+- `results/tables/ieee14_ac_k2_c79cc5869a74/S0.npy`
+- `results/tables/ieee14_ac_k2_c79cc5869a74/S_total.npy`
+- `results/tables/ieee14_ac_k2_c79cc5869a74/features.npz`
+- `results/tables/ieee14_ac_k2_c79cc5869a74/flags.npy`
+- `results/tables/ieee14_ac_k2_c79cc5869a74/ladder.npy`
+- `results/tables/ieee14_ac_k2_c79cc5869a74/meta.json`
+- `results/tables/ieee14_ac_k2_c79cc5869a74/n_trips.npy`
+- `results/tables/ieee14_ac_k2_c79cc5869a74/rounds.npy`
+- `results/tables/ieee14_ac_k2_c79cc5869a74/status.npy`
+- `results/tables/ieee14_ac_k3_c79cc5869a74/S.npy`
+- `results/tables/ieee14_ac_k3_c79cc5869a74/S0.npy`
+- `results/tables/ieee14_ac_k3_c79cc5869a74/S_total.npy`
+- `results/tables/ieee14_ac_k3_c79cc5869a74/features.npz`
+- `results/tables/ieee14_ac_k3_c79cc5869a74/flags.npy`
+- `results/tables/ieee14_ac_k3_c79cc5869a74/ladder.npy`
+- `results/tables/ieee14_ac_k3_c79cc5869a74/meta.json`
+- `results/tables/ieee14_ac_k3_c79cc5869a74/n_trips.npy`
+- `results/tables/ieee14_ac_k3_c79cc5869a74/rounds.npy`
+- `results/tables/ieee14_ac_k3_c79cc5869a74/status.npy`
+- `results/tables/ieee14_ac_k4_c79cc5869a74/S.npy`
+- `results/tables/ieee14_ac_k4_c79cc5869a74/S0.npy`
+- `results/tables/ieee14_ac_k4_c79cc5869a74/S_total.npy`
+- `results/tables/ieee14_ac_k4_c79cc5869a74/features.npz`
+- `results/tables/ieee14_ac_k4_c79cc5869a74/flags.npy`
+- `results/tables/ieee14_ac_k4_c79cc5869a74/ladder.npy`
+- `results/tables/ieee14_ac_k4_c79cc5869a74/meta.json`
+- `results/tables/ieee14_ac_k4_c79cc5869a74/n_trips.npy`
+- `results/tables/ieee14_ac_k4_c79cc5869a74/rounds.npy`
+- `results/tables/ieee14_ac_k4_c79cc5869a74/status.npy`
+- `results/tables/ieee14_dc_k1_d76df15db81b/S.npy`
+- `results/tables/ieee14_dc_k1_d76df15db81b/S0.npy`
+- `results/tables/ieee14_dc_k1_d76df15db81b/S_total.npy`
+- `results/tables/ieee14_dc_k1_d76df15db81b/features.npz`
+- `results/tables/ieee14_dc_k1_d76df15db81b/flags.npy`
+- `results/tables/ieee14_dc_k1_d76df15db81b/ladder.npy`
+- `results/tables/ieee14_dc_k1_d76df15db81b/meta.json`
+- `results/tables/ieee14_dc_k1_d76df15db81b/n_trips.npy`
+- `results/tables/ieee14_dc_k1_d76df15db81b/rounds.npy`
+- `results/tables/ieee14_dc_k1_d76df15db81b/status.npy`
+- `results/tables/ieee14_dc_k2_d76df15db81b/S.npy`
+- `results/tables/ieee14_dc_k2_d76df15db81b/S0.npy`
+- `results/tables/ieee14_dc_k2_d76df15db81b/S_total.npy`
+- `results/tables/ieee14_dc_k2_d76df15db81b/features.npz`
+- `results/tables/ieee14_dc_k2_d76df15db81b/flags.npy`
+- `results/tables/ieee14_dc_k2_d76df15db81b/ladder.npy`
+- `results/tables/ieee14_dc_k2_d76df15db81b/meta.json`
+- `results/tables/ieee14_dc_k2_d76df15db81b/n_trips.npy`
+- `results/tables/ieee14_dc_k2_d76df15db81b/rounds.npy`
+- `results/tables/ieee14_dc_k2_d76df15db81b/status.npy`
+- `results/tables/ieee14_dc_k3_d76df15db81b/S.npy`
+- `results/tables/ieee14_dc_k3_d76df15db81b/S0.npy`
+- `results/tables/ieee14_dc_k3_d76df15db81b/S_total.npy`
+- `results/tables/ieee14_dc_k3_d76df15db81b/features.npz`
+- `results/tables/ieee14_dc_k3_d76df15db81b/flags.npy`
+- `results/tables/ieee14_dc_k3_d76df15db81b/ladder.npy`
+- `results/tables/ieee14_dc_k3_d76df15db81b/meta.json`
+- `results/tables/ieee14_dc_k3_d76df15db81b/n_trips.npy`
+- `results/tables/ieee14_dc_k3_d76df15db81b/rounds.npy`
+- `results/tables/ieee14_dc_k3_d76df15db81b/status.npy`
+- `results/tables/ieee14_dc_k4_d76df15db81b/S.npy`
+- `results/tables/ieee14_dc_k4_d76df15db81b/S0.npy`
+- `results/tables/ieee14_dc_k4_d76df15db81b/S_total.npy`
+- `results/tables/ieee14_dc_k4_d76df15db81b/features.npz`
+- `results/tables/ieee14_dc_k4_d76df15db81b/flags.npy`
+- `results/tables/ieee14_dc_k4_d76df15db81b/ladder.npy`
+- `results/tables/ieee14_dc_k4_d76df15db81b/meta.json`
+- `results/tables/ieee14_dc_k4_d76df15db81b/n_trips.npy`
+- `results/tables/ieee14_dc_k4_d76df15db81b/rounds.npy`
+- `results/tables/ieee14_dc_k4_d76df15db81b/status.npy`
+- `scripts/aer_noise_toy_grover.py`
+- `scripts/aer_toy_grover.py`
+- `scripts/generate_truth_table.py`
+- `scripts/phase2_cascade_diagnostics.py`
+- `scripts/phase3_oracle_diagnostics.py`
+- `scripts/phase4_benchmark.py`
+- `scripts/phase4_bnb_unbudgeted.py`
+- `scripts/phase5_tierB_diagnostic.py`
+- `scripts/phase5_worked_examples.py`
+- `scripts/phase6_measured_inputs.py`
+- `scripts/phase6_resource_model.py`
+- `scripts/rating_feasibility.py`
+- `scripts/run_tests.py`
+- `scripts/verify_case_files.py`
+- `tests/conftest.py`
+- `tests/helpers.py`
+- `tests/integration/test_benchmark.py`
+- `tests/integration/test_case_files.py`
+- `tests/integration/test_classical.py`
+- `tests/integration/test_interface_extensions.py`
+- `tests/integration/test_oracle.py`
+- `tests/integration/test_table_oracle.py`
+- `tests/quantum/test_circuits_toy.py`
+- `tests/quantum/test_export_aer.py`
+- `tests/quantum/test_statevec_dicke.py`
+- `tests/quantum/test_tierB.py`
+- `tests/resource/test_resource_model.py`
+- `tests/unit/test_ac.py`
+- `tests/unit/test_cascade_invariants.py`
+- `tests/unit/test_cascade_known.py`
+- `tests/unit/test_config.py`
+- `tests/unit/test_contingency.py`
+- `tests/unit/test_counted_evaluator.py`
+- `tests/unit/test_dc.py`
+- `tests/unit/test_dc_sensitivities.py`
+- `tests/unit/test_dependency_rules.py`
+- `tests/unit/test_loader.py`
+- `tests/unit/test_ranking_metrics.py`
+- `tests/unit/test_rating_extension.py`
+- `tests/unit/test_scaling_ratings.py`
+- `tests/unit/test_security.py`
