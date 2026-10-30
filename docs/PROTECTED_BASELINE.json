@@ -1,0 +1,28 @@
+{
+ "source": "Phase 6 deliverable grid-doomsday-finder-phase6.zip (accepted provisionally)",
+ "zip_sha256": "5c7080c36d4e672f275a3fc55ea89986264212c597750705b9d96343eff686fe",
+ "packages": {
+  "gridtwin": "30e8e7ccc8622d91275341db2ab257a4dfa7bb6fe411d92535bbaf45e715251c",
+  "oracle": "336b809c21bf20942c7455bf296ec1dea84c2289ee77c93ce15cff2e4fca1b6b",
+  "classical": "878faffcdf01a71c8b7089e02b6e250d0be8986ddd38893bd3531715b7033ebc",
+  "qsearch": "145a924fc8d37b9eb6120cab86825ab48e1881fb60ea4e74314235525c002a67",
+  "resource": "a9656a23e7fb8ee47fc587d80aa6534968a8487e4d085c143870baf46cfb811f"
+ },
+ "saved_results_sha256": {
+  "results/phase1_rating_feasibility.json": "365812c5f8913ab237432b06283327c1477fc606ff81493805e8762310ed1ccc",
+  "results/phase2_cascade_diagnostics.json": "21a76163196efc721cf099bd920836b5885c8a627adc379a19a9c9d47373fa47",
+  "results/phase3_oracle_diagnostics.json": "57af26e91724f40951a56e1d1cf6428bc9b649a895c37563c1bad26dfd6a2a14",
+  "results/phase4/bench_ieee14_dc_k2.json": "63764dbde19f87692784fb62ca63c2504a583b93bf271ead1ca62cf2537777bd",
+  "results/phase4/bench_ieee14_dc_k3.json": "acacc043d6cffa1b5f5c49514a7b00f5ddd17c7e322b3340cfbcaa17dab37a05",
+  "results/phase4/bench_ieee14_dc_k4.json": "8024559b800ba3262ed4fc4d8b3b5847013e0c79497eefa636bd159c1a904d2a",
+  "results/phase4/bnb_unbudgeted_ieee14.json": "a6727569c60edbbaec68616998eac2d99fabdcc84e76edf6bdc9143630211d61",
+  "results/phase4/summary_ieee14_dc.json": "63d95b6c2020e2f76626196659fda32cc56578ce9126b4a49ed68748f7c17ade",
+  "results/phase5/aer_noise_toy_grover_6_2.json": "cba3b720af1c48bee9fd0bf43f680c531e64f4c92821ff3b0fd7ec6b8296c734",
+  "results/phase5/aer_toy_grover_6_2.json": "7a5f32e0586c87e7ca33c967a27507fa3b7a2e90a3d3b5d5e388e8cb3d0211f9",
+  "results/phase5/aer_toy_grover_8_3.json": "026ed671964dcb4e1f5d6e695c3fc2e03f181518893800ebe2a469e352b713b4",
+  "results/phase5/tierB_dh_ieee14.json": "9960c34dc9744473dad0f7412bdeafbc83f469b1d7f0bb0b1ee71221b05311d0",
+  "results/phase5/worked_examples.json": "76b705c1c8c081d08156a5dd9bfadc030c3a08f5de2cb8bb6f50342061f5720a",
+  "results/phase6/measured_inputs_ieee14.json": "b7d9d03cff3c2c3d4c08cfedb95e4cdff6ddee9cea363fb240290670e1374a00",
+  "results/phase6/resource_model.json": "21bac9bdb21325f732f965b6b6a51fc490c31d9ca1d6a916c58e41381958b001"
+ }
+}

@@ -1,0 +1,19 @@
+# Defaults follow V2 section 20.2 and Appendix A. Sections marked (ext) are additions
+# needed by the implementation; they do not change any V2 value.
+grid: ieee14
+k: 3
+rating: {family: n1_covering, headroom_h: 0.25, floor_frac: 0.05, n1_margin_m: 0.05}   # n1_covering = implementation extension (docs/RATING_EXTENSION.md); V2 5.3 baseline = family: proportional
+stress_lambda: 1.10
+cascade: {trip_factor: 1.0, trip_policy: all_overloaded, max_rounds: 30, mode_default: dc,
+          ladder_step: 0.05, redispatch: up_and_down}
+severity: {tau: 0.20, delta_cascade: 0.10}
+quantum: {encoding: binary_dicke, bbht_lambda: 1.2, seeds: 200, patience: 3, y0: 0.0}
+resource: {b: 16, R: 4, k_eff: 3k, t_toffoli_us: 10, c_q: 4.0,
+           t_classical_ms: {dc: 0.5, ac: 10}, cores: [1, 1000]}
+numerics:          # (ext) explicit tolerances, V2 sections 5.2, 7, 8.4, 8.8
+  ac_tol_pu: 1.0e-8
+  ac_max_iter: 30
+  overload_tol: 1.0e-9
+  tie_band: 1.0e-9
+  voltage_band: [0.90, 1.10]
+  float_dtype: float64
