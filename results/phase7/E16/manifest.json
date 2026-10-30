@@ -1,0 +1,110 @@
+{
+ "experiment_id": "E16",
+ "name": "Falsification summary",
+ "v2_section": "18.1; 18 E16",
+ "priority": "M",
+ "status": "EXECUTED",
+ "data_status": "NO_GRID_DATA",
+ "evidence_label": "[EXECUTED] [MEASURED]",
+ "parts": [
+  {
+   "name": "F1_from_E7",
+   "status": "EXECUTED",
+   "data_status": "NO_GRID_DATA",
+   "kind": "MEASURED",
+   "dataset": null,
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "F2_from_E3",
+   "status": "EXECUTED",
+   "data_status": "NO_GRID_DATA",
+   "kind": "MEASURED",
+   "dataset": null,
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "F3_from_E11",
+   "status": "EXECUTED",
+   "data_status": "NO_GRID_DATA",
+   "kind": "MEASURED",
+   "dataset": null,
+   "reason": "",
+   "label": "[MEASURED]"
+  }
+ ],
+ "config": {
+  "file": "doomsday/experiments/specs.py",
+  "params": {},
+  "datasets": [],
+  "config_hash": "5111a49f9ebb6feee9fa91431407ad7a3e4dd8745fc57bb5390a7d5fd0c95cef",
+  "base_config_hash": "15ac98ee0c4a01f566b427789c247b0c9519ff736a6f65d83c76aec60810cc68"
+ },
+ "datasets": {},
+ "seeds": [],
+ "parameters_and_stopping_conditions": {},
+ "accounting": {
+  "classical_function_evaluations": null,
+  "quantum_oracle_calls_emulated": null,
+  "classical_verification_calls": null,
+  "preprocessing_evaluations": null,
+  "estimated_quantum_runtime_s": null,
+  "notes": ""
+ },
+ "limitations": [
+  "Criteria and thresholds were registered in doomsday/experiments/specs.py before the experiments ran (git history)."
+ ],
+ "acceptance_criteria": [
+  {
+   "name": "structured classical finds the AC-verified Smax in << sqrt(N) evaluations at all tested sizes",
+   "much_less_than_factor": 0.1,
+   "structured_methods": [
+    "hillclimb",
+    "beam",
+    "lodf_pool",
+    "ml_screen",
+    "milp",
+    "bnb",
+    "sa",
+    "ga"
+   ],
+   "oracle": "AC truth table where an exhaustive AC table exists (search run directly on the AC predicate)"
+  },
+  {
+   "name": "DC recall at tau below the 10.1 threshold",
+   "recall_min": 0.9
+  },
+  {
+   "name": "top-10 Jaccard across rating families below ~0.3",
+   "jaccard_min": 0.3,
+   "jaccard_definition": "tie-expanded top-10 Jaccard of each non-baseline rating family vs the baseline family; F3 is met if the MEDIAN over (family, grid) pairs is < 0.3"
+  }
+ ],
+ "implementation": {
+  "package_version": "0.1.0",
+  "source_sha256": "6daf0a7fcea439b0be0607cefe7643fc50c9a0ecfc67752ddefc1f73eec2f155"
+ },
+ "environment": {
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v153-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1",
+  "matplotlib": "3.11.2",
+  "doomsday": "0.1.0",
+  "threads_env": {
+   "OMP_NUM_THREADS": null,
+   "OPENBLAS_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "cpu_count": 2
+ },
+ "runtime_s": 0.019711884000571445,
+ "outputs": {
+  "results/phase7/E16/result.json": "ff3360755e87af6b6ae0123818cfa7111964f8e10e68ac72b2c7b5f154ede013"
+ },
+ "result_digest": "f435b99cc9b4f8523a62da9413ac1428114e0e31fbffdf393103c7d0bc848e21",
+ "generated_utc": "2026-10-23T16:03:54Z"
+}

@@ -1,0 +1,95 @@
+{
+ "experiment_id": "E15",
+ "name": "Resource and crossover sensitivity",
+ "v2_section": "16; 17; 18 E15",
+ "priority": "M",
+ "status": "EXECUTED",
+ "data_status": "NO_GRID_DATA",
+ "evidence_label": "[EXECUTED] [ESTIMATED] analytical model: V2 formulas, reported both uncalibrated and with toy-scale partial kappa calibration (never fully calibrated)",
+ "parts": [
+  {
+   "name": "resource_model_measured_inputs",
+   "status": "EXECUTED",
+   "data_status": "NO_GRID_DATA",
+   "kind": "ESTIMATED_PARTIAL",
+   "dataset": null,
+   "reason": "",
+   "label": "[ESTIMATED] analytical model: V2 formulas, reported both uncalibrated and with toy-scale partial kappa calibration (never fully calibrated)"
+  }
+ ],
+ "config": {
+  "file": "doomsday/experiments/specs.py",
+  "params": {},
+  "datasets": [
+   {
+    "name": "ieee118",
+    "role": "pre_registered"
+   }
+  ],
+  "config_hash": "a578600502c563407090d5b903dc7878f20683e4a408d56bd09da6faaf1df2fd",
+  "base_config_hash": "15ac98ee0c4a01f566b427789c247b0c9519ff736a6f65d83c76aec60810cc68"
+ },
+ "datasets": {
+  "ieee118": {
+   "name": "ieee118",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "bc2e6f22b4b9e776572885ee4b50e4f4ab2ee0c5577e9126e86d906f14c4b5f7",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  }
+ },
+ "seeds": [],
+ "parameters_and_stopping_conditions": {
+  "L": 186,
+  "B": 118,
+  "k": 3,
+  "t_toffoli_s": {
+   "optimistic": 1e-06,
+   "realistic": 1e-05,
+   "pessimistic": 0.0001
+  }
+ },
+ "accounting": {
+  "classical_function_evaluations": null,
+  "quantum_oracle_calls_emulated": null,
+  "classical_verification_calls": null,
+  "preprocessing_evaluations": null,
+  "estimated_quantum_runtime_s": null,
+  "notes": ""
+ },
+ "limitations": [
+  "[ESTIMATED] analytical model; no IEEE-scale circuit is synthesized; t_T, factory overhead and error-correction overhead remain bounds (V2 16.5).",
+  "kappa_cal is from a toy-scale A2 with textbook synthesis; small_inverse uncalibrated; GE extrapolated.",
+  "t_c is this machine's scalar-Python cascade time; an optimised classical implementation would be faster, moving N* further out."
+ ],
+ "acceptance_criteria": [],
+ "implementation": {
+  "package_version": "0.1.0",
+  "source_sha256": "6daf0a7fcea439b0be0607cefe7643fc50c9a0ecfc67752ddefc1f73eec2f155"
+ },
+ "environment": {
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v153-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1",
+  "matplotlib": "3.11.2",
+  "doomsday": "0.1.0",
+  "threads_env": {
+   "OMP_NUM_THREADS": null,
+   "OPENBLAS_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "cpu_count": 2
+ },
+ "runtime_s": 3.1377833580008883,
+ "outputs": {
+  "results/phase7/E15/fig_E15_heatmap.png": "079f213dcca746e7de5a2ef0a0c7b685e5df79338a1d4e996c41966c555646c9",
+  "results/phase7/E15/fig_E15_time_vs_k.png": "a5152657305a73cb21b88d55cb951408c154824cafb0eb8fafbfeab0a3fb12a2",
+  "results/phase7/E15/fig_E15_tornado.png": "f418a8c0914de3d7c9fd63c910507071f424df1653d8cac8da017eefbed6449d",
+  "results/phase7/E15/result.json": "369ccb457c83d3135ca68afa94176b49a751c0dd7541db0b750cb41dc1f50068"
+ },
+ "result_digest": "983ebe082c7caa3457a2efc464bae0c93eda92233bc55511acd95b84914ed9bd",
+ "generated_utc": "2026-10-23T16:03:54Z"
+}

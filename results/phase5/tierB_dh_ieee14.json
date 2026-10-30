@@ -1,0 +1,162 @@
+{
+ "label": "[EMULATED] Tier B diagnostic (not E6/E7); IEEE-14 transcribed_from_memory_UNVERIFIED; DC truth-table predicate",
+ "seeds": 200,
+ "y0": 0.0,
+ "patience": 3,
+ "lambda": 1.2,
+ "code_version": "4aaaff30e4172ed425720e90fcbbb473ae36fb71799180fff83b47fbdebd5801",
+ "software": {
+  "doomsday": "0.1.0",
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1"
+ },
+ "rows": [
+  {
+   "k": 2,
+   "N": 190,
+   "Smax": 0.5219726219726218,
+   "M_at_Smax": 1,
+   "sqrtN": 13.784048752090222,
+   "success_rate": 1.0,
+   "discovery_quantum_calls": {
+    "mean": 36.795,
+    "median": 34.0,
+    "p95": 75.09999999999997,
+    "n": 200
+   },
+   "discovery_quantum_calls_mean_CI95": [
+    33.974875000000004,
+    39.955124999999995
+   ],
+   "c_hat_discovery_over_sqrtN": 2.6693898622797883,
+   "total_quantum_calls_until_stop": {
+    "mean": 179.235,
+    "median": 177.0,
+    "p95": 226.04999999999998,
+    "n": 200
+   },
+   "total_over_sqrtN_mean": 13.003073568846796,
+   "dh_proven_bound_22.5sqrtN+1.4lg2N": 390.3648964254013,
+   "classical_verifications_total": {
+    "mean": 65.195,
+    "median": 65.0,
+    "p95": 80.0,
+    "n": 200
+   },
+   "classical_verifications_to_discovery": {
+    "mean": 20.195,
+    "median": 20.0,
+    "p95": 35.0,
+    "n": 200
+   },
+   "table_construction_evals": 190,
+   "reference_only_NOT_A_COMPARISON": {
+    "best_classical_mean_discovery_unique_evals_phase4": {
+     "value": 30.0,
+     "method": "lodf_pool|{'m': 16}"
+    },
+    "units_differ": "quantum_oracle_calls (j+1 per attempt, ideal emulated) vs classical unique evaluations; the quantum side excludes the N-evaluation table construction and any oracle-circuit cost"
+   }
+  },
+  {
+   "k": 3,
+   "N": 1140,
+   "Smax": 0.5320830887202569,
+   "M_at_Smax": 3,
+   "sqrtN": 33.76388603226827,
+   "success_rate": 1.0,
+   "discovery_quantum_calls": {
+    "mean": 51.435,
+    "median": 49.0,
+    "p95": 100.09999999999997,
+    "n": 200
+   },
+   "discovery_quantum_calls_mean_CI95": [
+    47.46975,
+    55.330124999999995
+   ],
+   "c_hat_discovery_over_sqrtN": 1.5233732263769457,
+   "total_quantum_calls_until_stop": {
+    "mean": 376.895,
+    "median": 376.0,
+    "p95": 435.04999999999995,
+    "n": 200
+   },
+   "total_over_sqrtN_mean": 11.162666514150654,
+   "dh_proven_bound_22.5sqrtN+1.4lg2N": 904.0558988851416,
+   "classical_verifications_total": {
+    "mean": 86.125,
+    "median": 85.0,
+    "p95": 104.0,
+    "n": 200
+   },
+   "classical_verifications_to_discovery": {
+    "mean": 26.125,
+    "median": 25.0,
+    "p95": 44.0,
+    "n": 200
+   },
+   "table_construction_evals": 1140,
+   "reference_only_NOT_A_COMPARISON": {
+    "best_classical_mean_discovery_unique_evals_phase4": {
+     "value": 94.4090909090909,
+     "method": "ml_screen|{}"
+    },
+    "units_differ": "quantum_oracle_calls (j+1 per attempt, ideal emulated) vs classical unique evaluations; the quantum side excludes the N-evaluation table construction and any oracle-circuit cost"
+   }
+  },
+  {
+   "k": 4,
+   "N": 4845,
+   "Smax": 0.537744139630932,
+   "M_at_Smax": 1,
+   "sqrtN": 69.60603422117941,
+   "success_rate": 1.0,
+   "discovery_quantum_calls": {
+    "mean": 170.625,
+    "median": 151.5,
+    "p95": 325.2999999999999,
+    "n": 200
+   },
+   "discovery_quantum_calls_mean_CI95": [
+    158.438,
+    182.16074999999998
+   ],
+   "c_hat_discovery_over_sqrtN": 2.4512960967985014,
+   "total_quantum_calls_until_stop": {
+    "mean": 810.96,
+    "median": 798.5,
+    "p95": 1017.05,
+    "n": 200
+   },
+   "total_over_sqrtN_mean": 11.65071403756608,
+   "dh_proven_bound_22.5sqrtN+1.4lg2N": 1775.9585899891301,
+   "classical_verifications_total": {
+    "mean": 123.845,
+    "median": 122.5,
+    "p95": 153.04999999999998,
+    "n": 200
+   },
+   "classical_verifications_to_discovery": {
+    "mean": 51.845,
+    "median": 50.5,
+    "p95": 81.04999999999998,
+    "n": 200
+   },
+   "table_construction_evals": 4845,
+   "reference_only_NOT_A_COMPARISON": {
+    "best_classical_mean_discovery_unique_evals_phase4": {
+     "value": 203.2,
+     "method": "ga|{}"
+    },
+    "units_differ": "quantum_oracle_calls (j+1 per attempt, ideal emulated) vs classical unique evaluations; the quantum side excludes the N-evaluation table construction and any oracle-circuit cost"
+   }
+  }
+ ],
+ "log_log_slope_discovery_vs_N": {
+  "slope": 0.4624646361935217,
+  "n_points": 3,
+  "caveat": "3 points, one grid, ties present: indicative only; V2 hypothesis slope ~0.5"
+ }
+}

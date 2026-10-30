@@ -1,0 +1,143 @@
+{
+ "experiment_id": "E0",
+ "name": "Simulator validation",
+ "v2_section": "18 E0; 19 U1-U9, U7",
+ "priority": "M",
+ "status": "EXECUTED",
+ "data_status": "OFFICIAL_DATA",
+ "evidence_label": "[EXECUTED] [MEASURED]; [MEASURED] against hand-solved/analytic references",
+ "parts": [
+  {
+   "name": "hand_solved_toy_grids_U1_U2_U9_U11",
+   "status": "EXECUTED",
+   "data_status": "NO_GRID_DATA",
+   "kind": "HAND_SOLVED",
+   "dataset": null,
+   "reason": "",
+   "label": "[MEASURED] against hand-solved/analytic references"
+  },
+  {
+   "name": "reference_and_conservation[ieee14]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "reference_and_conservation[ieee30]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee30",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "reference_and_conservation[ieee118]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee118",
+   "reason": "",
+   "label": "[MEASURED]"
+  }
+ ],
+ "config": {
+  "file": "doomsday/experiments/specs.py",
+  "params": {
+   "tol_pu": 1e-06
+  },
+  "datasets": [
+   {
+    "name": "ieee14",
+    "role": "pre_registered"
+   },
+   {
+    "name": "ieee30",
+    "role": "pre_registered"
+   },
+   {
+    "name": "ieee118",
+    "role": "pre_registered"
+   }
+  ],
+  "config_hash": "d363cfd59d5e0c1d092e1fbfee95e3b513d713086783358bfd47fa59f49ae7f9",
+  "base_config_hash": "15ac98ee0c4a01f566b427789c247b0c9519ff736a6f65d83c76aec60810cc68"
+ },
+ "datasets": {
+  "ieee118": {
+   "name": "ieee118",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "bc2e6f22b4b9e776572885ee4b50e4f4ab2ee0c5577e9126e86d906f14c4b5f7",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  },
+  "ieee14": {
+   "name": "ieee14",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "2ffc4e1b734ae6c5e92dbe68b4e36010ed695a4bbcc4d065c74c4fbc39fcf3c1",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  },
+  "ieee30": {
+   "name": "ieee30",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "3d9030311259b553be85d02336b7e1bcb24ec04775bee6671bdb62d18e4e2137",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  }
+ },
+ "seeds": [],
+ "parameters_and_stopping_conditions": {
+  "tol_pu": 1e-06
+ },
+ "accounting": {
+  "classical_function_evaluations": null,
+  "quantum_oracle_calls_emulated": null,
+  "classical_verification_calls": null,
+  "preprocessing_evaluations": null,
+  "estimated_quantum_runtime_s": null,
+  "notes": ""
+ },
+ "limitations": [
+  "Reference solver is PYPOWER, not pandapower (see specs.DEVIATIONS E0-reference).",
+  "AC comparison is at the unstressed case-file operating point; the cascade's stressed base point uses the same solver."
+ ],
+ "acceptance_criteria": [
+  {
+   "criterion": "all flows match to 1e-06 p.u.; conservation residual < 1e-06; cascade sequences match",
+   "met": true
+  }
+ ],
+ "implementation": {
+  "package_version": "0.1.0",
+  "source_sha256": "45d4b702b7a2722eab070703b6b82769669e5ed2b3f3ce09df3b745ae8964122"
+ },
+ "environment": {
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v153-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1",
+  "matplotlib": "3.11.2",
+  "doomsday": "0.1.0",
+  "threads_env": {
+   "OMP_NUM_THREADS": null,
+   "OPENBLAS_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "cpu_count": 2
+ },
+ "runtime_s": 160.60866370600002,
+ "outputs": {
+  "results/phase7/E0/hand_solved_junit.xml": "320e676f73b93581815b120fb31f7a61231405843cecc33a378ad3c1c05e48c4",
+  "results/phase7/E0/result.json": "10f76af79f95ae9d28dee85119a859bfd6777c2146163afda74633600fcc8eb1"
+ },
+ "result_digest": "10b565b249c0f3b555b19f585b8bd1a7ac7a646972546048f987e9148afb9597",
+ "generated_utc": "2026-10-23T09:43:26Z"
+}

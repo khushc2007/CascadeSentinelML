@@ -1,0 +1,86 @@
+{
+ "label": "measured inputs for the resource model: IEEE-14 (transcribed_from_memory_UNVERIFIED); NOT transferable to IEEE-118",
+ "per_k": {
+  "2": {
+   "N": 190,
+   "M_at_Smax": 1,
+   "R_rounds_solved": {
+    "p50": 1.0,
+    "p95": 5.0,
+    "max": 6.0,
+    "mean": 1.7473684210526317
+   },
+   "k_eff_final_outage_set_size": {
+    "p50": 2.0,
+    "p95": 10.0,
+    "max": 17.0,
+    "mean": 3.705263157894737
+   },
+   "source_R_keff": "measured from the DC truth table (full records), IEEE-14, all N sets (E2-like diagnostic; not E2)",
+   "c_q_discovery_over_sqrt_N_over_M": 2.6693898622797883,
+   "c_q_to_certified_stop_over_sqrt_N_over_M": 13.003073568846796,
+   "c_tail_over_sqrt_N": 10.333683706567006,
+   "verifications_per_quantum_call_at_discovery": 0.5488517461611632,
+   "source_cq": "Tier B EMULATION, 200 seeds, ideal amplitude amplification (results/phase5/tierB_dh_ieee14.json); y0=0, patience=3, lambda=1.2",
+   "t_classical_informal_ms": {
+    "dc": 1.090179647368329,
+    "ac": 3.675496668421075
+   },
+   "source_tc": "INFORMAL diagnostic, unoptimised pure-Python engine on a 14-bus grid (NOT E1, not representative of 118 buses)"
+  },
+  "3": {
+   "N": 1140,
+   "M_at_Smax": 3,
+   "R_rounds_solved": {
+    "p50": 2.0,
+    "p95": 5.0,
+    "max": 6.0,
+    "mean": 2.3289473684210527
+   },
+   "k_eff_final_outage_set_size": {
+    "p50": 5.0,
+    "p95": 12.0,
+    "max": 18.0,
+    "mean": 6.149122807017544
+   },
+   "source_R_keff": "measured from the DC truth table (full records), IEEE-14, all N sets (E2-like diagnostic; not E2)",
+   "c_q_discovery_over_sqrt_N_over_M": 2.6385598269749955,
+   "c_q_to_certified_stop_over_sqrt_N_over_M": 19.33430555045671,
+   "c_tail_over_sqrt_N": 9.63929328777371,
+   "verifications_per_quantum_call_at_discovery": 0.5079226207835131,
+   "source_cq": "Tier B EMULATION, 200 seeds, ideal amplitude amplification (results/phase5/tierB_dh_ieee14.json); y0=0, patience=3, lambda=1.2",
+   "t_classical_informal_ms": {
+    "dc": 1.5566447578947373,
+    "ac": 7.526481720175457
+   },
+   "source_tc": "INFORMAL diagnostic, unoptimised pure-Python engine on a 14-bus grid (NOT E1, not representative of 118 buses)"
+  },
+  "4": {
+   "N": 4845,
+   "M_at_Smax": 1,
+   "R_rounds_solved": {
+    "p50": 3.0,
+    "p95": 5.0,
+    "max": 7.0,
+    "mean": 2.582249742002064
+   },
+   "k_eff_final_outage_set_size": {
+    "p50": 8.0,
+    "p95": 13.0,
+    "max": 18.0,
+    "mean": 7.862332301341589
+   },
+   "source_R_keff": "measured from the DC truth table (full records), IEEE-14, all N sets (E2-like diagnostic; not E2)",
+   "c_q_discovery_over_sqrt_N_over_M": 2.4512960967985014,
+   "c_q_to_certified_stop_over_sqrt_N_over_M": 11.65071403756608,
+   "c_tail_over_sqrt_N": 9.19941794076758,
+   "verifications_per_quantum_call_at_discovery": 0.3038534798534798,
+   "source_cq": "Tier B EMULATION, 200 seeds, ideal amplitude amplification (results/phase5/tierB_dh_ieee14.json); y0=0, patience=3, lambda=1.2",
+   "t_classical_informal_ms": {
+    "dc": 1.5566447578947373,
+    "ac": 7.526481720175457
+   },
+   "source_tc": "INFORMAL diagnostic, unoptimised pure-Python engine on a 14-bus grid (NOT E1, not representative of 118 buses)"
+  }
+ }
+}

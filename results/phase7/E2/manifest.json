@@ -1,0 +1,208 @@
+{
+ "experiment_id": "E2",
+ "name": "Cascade phenomenology",
+ "v2_section": "18 E2",
+ "priority": "M",
+ "status": "PARTIAL",
+ "data_status": "OFFICIAL_DATA",
+ "evidence_label": "[PARTIAL] [MEASURED]",
+ "parts": [
+  {
+   "name": "phenomenology[ieee14,k=1]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "phenomenology[ieee14,k=2]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "phenomenology[ieee14,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "phenomenology[ieee14,k=4]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "phenomenology[ieee30,k=1]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee30",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "phenomenology[ieee30,k=2]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee30",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "phenomenology[ieee30,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee30",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "phenomenology[ieee30,k=4]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee30",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "phenomenology[ieee118,k=1]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee118",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "phenomenology[ieee118,k=2]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee118",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "phenomenology[ieee118,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee118",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "phenomenology[ieee118,k=4]",
+   "status": "NOT_RUN",
+   "data_status": "NO_GRID_DATA",
+   "kind": "NONE",
+   "dataset": "ieee118",
+   "reason": "compute: DC table 48,277,230 sets: ~96 core-hours on this 2-vCPU machine",
+   "label": "[NOT_RUN] compute: DC table 48,277,230 sets: ~96 core-hours on this 2-vCPU machine"
+  }
+ ],
+ "config": {
+  "file": "doomsday/experiments/specs.py",
+  "params": {},
+  "datasets": [
+   {
+    "name": "ieee14",
+    "role": "pre_registered"
+   },
+   {
+    "name": "ieee30",
+    "role": "pre_registered"
+   },
+   {
+    "name": "ieee118",
+    "role": "pre_registered"
+   }
+  ],
+  "config_hash": "22f912d627340bedc72fdafe1df154cbac569ec143273c25767f690bab1ee1d3",
+  "base_config_hash": "15ac98ee0c4a01f566b427789c247b0c9519ff736a6f65d83c76aec60810cc68"
+ },
+ "datasets": {
+  "ieee118": {
+   "name": "ieee118",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "bc2e6f22b4b9e776572885ee4b50e4f4ab2ee0c5577e9126e86d906f14c4b5f7",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  },
+  "ieee14": {
+   "name": "ieee14",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "2ffc4e1b734ae6c5e92dbe68b4e36010ed695a4bbcc4d065c74c4fbc39fcf3c1",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  },
+  "ieee30": {
+   "name": "ieee30",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "3d9030311259b553be85d02336b7e1bcb24ec04775bee6671bdb62d18e4e2137",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  }
+ },
+ "seeds": [],
+ "parameters_and_stopping_conditions": {
+  "tau": 0.2,
+  "delta": 0.1
+ },
+ "accounting": {
+  "classical_function_evaluations": null,
+  "quantum_oracle_calls_emulated": null,
+  "classical_verification_calls": null,
+  "preprocessing_evaluations": null,
+  "estimated_quantum_runtime_s": null,
+  "notes": ""
+ },
+ "limitations": [
+  "DC fidelity tables (V2 E2).",
+  "rounds = solved power-flow rounds; keff = k + total trips (outage-set size at termination)."
+ ],
+ "acceptance_criteria": [],
+ "implementation": {
+  "package_version": "0.1.0",
+  "source_sha256": "0859ee9c4e81d558920f1c5307078ea51f1485d45977a2f4b128a39b01a6c5bb"
+ },
+ "environment": {
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v153-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1",
+  "matplotlib": "3.11.2",
+  "doomsday": "0.1.0",
+  "threads_env": {
+   "OMP_NUM_THREADS": "1",
+   "OPENBLAS_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "cpu_count": 2
+ },
+ "runtime_s": 0.9332082429991715,
+ "outputs": {
+  "results/phase7/E2/result.json": "7f2f57e06cec28b414b0e434734403ed141e016180e899bdff66179680284e6c"
+ },
+ "result_digest": "c2bb18dc8eedaa63c79fd0fe85f7193092d475e7847f76a08938eba250423e6f",
+ "generated_utc": "2026-10-23T13:17:57Z"
+}

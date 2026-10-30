@@ -1,0 +1,129 @@
+{
+ "experiment_id": "E4",
+ "name": "Oracle and circuit equivalence",
+ "v2_section": "18 E4; 19 Q1-Q6, O1",
+ "priority": "M",
+ "status": "EXECUTED",
+ "data_status": "OFFICIAL_DATA",
+ "evidence_label": "[EXECUTED] [MEASURED] gate counts of a synthesized reversible circuit, verified by exhaustive basis-state simulation; [SIMULATED] NumPy statevector simulation (not Aer, not hardware); [SIMULATED] Qiskit Aer simulation (classical simulator of an ideal or noise-modelled device; not hardware)",
+ "parts": [
+  {
+   "name": "Q1_dicke_fidelity",
+   "status": "EXECUTED",
+   "data_status": "NO_GRID_DATA",
+   "kind": "NUMPY_STATEVECTOR",
+   "dataset": null,
+   "reason": "",
+   "label": "[SIMULATED] NumPy statevector simulation (not Aer, not hardware)"
+  },
+  {
+   "name": "Q2_reflection",
+   "status": "EXECUTED",
+   "data_status": "NO_GRID_DATA",
+   "kind": "NUMPY_STATEVECTOR",
+   "dataset": null,
+   "reason": "",
+   "label": "[SIMULATED] NumPy statevector simulation (not Aer, not hardware)"
+  },
+  {
+   "name": "Q3_O1_toys_ieee14",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "NUMPY_STATEVECTOR",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[SIMULATED] NumPy statevector simulation (not Aer, not hardware)"
+  },
+  {
+   "name": "Q4_aer_vs_tierB",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "AER_SIMULATED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[SIMULATED] Qiskit Aer simulation (classical simulator of an ideal or noise-modelled device; not hardware)"
+  },
+  {
+   "name": "Q6_micro_oracle_exhaustive",
+   "status": "EXECUTED",
+   "data_status": "NO_GRID_DATA",
+   "kind": "SYNTHESIZED",
+   "dataset": null,
+   "reason": "",
+   "label": "[MEASURED] gate counts of a synthesized reversible circuit, verified by exhaustive basis-state simulation"
+  }
+ ],
+ "config": {
+  "file": "doomsday/experiments/specs.py",
+  "params": {},
+  "datasets": [],
+  "config_hash": "5111a49f9ebb6feee9fa91431407ad7a3e4dd8745fc57bb5390a7d5fd0c95cef",
+  "base_config_hash": "15ac98ee0c4a01f566b427789c247b0c9519ff736a6f65d83c76aec60810cc68"
+ },
+ "datasets": {
+  "ieee14": {
+   "name": "ieee14",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "2ffc4e1b734ae6c5e92dbe68b4e36010ed695a4bbcc4d065c74c4fbc39fcf3c1",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  }
+ },
+ "seeds": [],
+ "parameters_and_stopping_conditions": {
+  "toys": [
+   [
+    6,
+    2
+   ],
+   [
+    8,
+    3
+   ]
+  ]
+ },
+ "accounting": {
+  "classical_function_evaluations": null,
+  "quantum_oracle_calls_emulated": null,
+  "classical_verification_calls": null,
+  "preprocessing_evaluations": null,
+  "estimated_quantum_runtime_s": null,
+  "notes": ""
+ },
+ "limitations": [
+  "Toys use candidate branches 0..m-1 of IEEE-14 (a fixed shortlist, never evidence of scaling).",
+  "The phase oracle is a compiled lookup of a classically computed marked set (Tier A1)."
+ ],
+ "acceptance_criteria": [
+  {
+   "criterion": "Dicke F >= 1-1e-10; Aer vs Tier B within 1e-9 for all r",
+   "met": true
+  }
+ ],
+ "implementation": {
+  "package_version": "0.1.0",
+  "source_sha256": "dbe99ef5edd63f6cce17abfe9bd354a6fb4ab1b496319b052ea917d3df389b53"
+ },
+ "environment": {
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v153-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1",
+  "matplotlib": "3.11.2",
+  "doomsday": "0.1.0",
+  "threads_env": {
+   "OMP_NUM_THREADS": "1",
+   "OPENBLAS_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "cpu_count": 2
+ },
+ "runtime_s": 46.22487339700092,
+ "outputs": {
+  "results/phase7/E4/result.json": "24f7754f793ff895fe3956cc8f5effdf425ab2f99e7cf3829287ef19732b028c"
+ },
+ "result_digest": "6568562c75467b7b843212bd8ae4cb99f494941aeb772be3262f356e897c00c9",
+ "generated_utc": "2026-10-23T13:53:16Z"
+}

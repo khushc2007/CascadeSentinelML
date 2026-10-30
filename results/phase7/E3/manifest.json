@@ -1,0 +1,274 @@
+{
+ "experiment_id": "E3",
+ "name": "DC-AC agreement",
+ "v2_section": "10.1; 18 E3",
+ "priority": "M",
+ "status": "PARTIAL",
+ "data_status": "OFFICIAL_DATA",
+ "evidence_label": "[PARTIAL] [MEASURED]",
+ "parts": [
+  {
+   "name": "E3a[ieee14,k=1]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "E3a[ieee14,k=2]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "E3a[ieee14,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "E3a[ieee14,k=4]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "E3a[ieee30,k=1]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee30",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "E3a[ieee30,k=2]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee30",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "E3a[ieee30,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee30",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "E3a[ieee118,k=1]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee118",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "E3a[ieee118,k=2]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee118",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "E3a[ieee118,k=3]",
+   "status": "NOT_RUN",
+   "data_status": "NO_GRID_DATA",
+   "kind": "NONE",
+   "dataset": "ieee118",
+   "reason": "compute: exhaustive AC on 1,055,240 sets: ~21 core-hours on this 2-vCPU machine",
+   "label": "[NOT_RUN] compute: exhaustive AC on 1,055,240 sets: ~21 core-hours on this 2-vCPU machine"
+  },
+  {
+   "name": "E3b[ieee118,k=4]",
+   "status": "NOT_RUN",
+   "data_status": "NO_GRID_DATA",
+   "kind": "NONE",
+   "dataset": "ieee118",
+   "reason": "compute: needs the IEEE-118 k=4 DC table (see E2) to stratify",
+   "label": "[NOT_RUN] compute: needs the IEEE-118 k=4 DC table (see E2) to stratify"
+  },
+  {
+   "name": "E3b_supplementary[ieee118,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee118",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "E3c[ieee14,k=2]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "E3c[ieee14,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "E3c[ieee14,k=4]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "E3c[ieee30,k=2]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee30",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "E3c[ieee30,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee30",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "E3c[ieee118,k=2]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee118",
+   "reason": "",
+   "label": "[MEASURED]"
+  }
+ ],
+ "config": {
+  "file": "doomsday/experiments/specs.py",
+  "params": {
+   "e3b_per_stratum": 100
+  },
+  "datasets": [
+   {
+    "name": "ieee14",
+    "role": "pre_registered"
+   },
+   {
+    "name": "ieee30",
+    "role": "pre_registered"
+   },
+   {
+    "name": "ieee118",
+    "role": "pre_registered"
+   }
+  ],
+  "config_hash": "f3bf3b296db19a694a91a967eee431893d5b9f140eed38e76bf839b9670d5cfd",
+  "base_config_hash": "15ac98ee0c4a01f566b427789c247b0c9519ff736a6f65d83c76aec60810cc68"
+ },
+ "datasets": {
+  "ieee118": {
+   "name": "ieee118",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "bc2e6f22b4b9e776572885ee4b50e4f4ab2ee0c5577e9126e86d906f14c4b5f7",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  },
+  "ieee14": {
+   "name": "ieee14",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "2ffc4e1b734ae6c5e92dbe68b4e36010ed695a4bbcc4d065c74c4fbc39fcf3c1",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  },
+  "ieee30": {
+   "name": "ieee30",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "3d9030311259b553be85d02336b7e1bcb24ec04775bee6671bdb62d18e4e2137",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  }
+ },
+ "seeds": [
+  7
+ ],
+ "parameters_and_stopping_conditions": {
+  "tau": 0.2,
+  "e3b_per_stratum": 100
+ },
+ "accounting": {
+  "classical_function_evaluations": null,
+  "quantum_oracle_calls_emulated": null,
+  "classical_verification_calls": null,
+  "preprocessing_evaluations": null,
+  "estimated_quantum_runtime_s": null,
+  "notes": ""
+ },
+ "limitations": [
+  "AC severities are S_ladder (V2 8.6); E3c(iii) uses S_total (failed islands fully lost).",
+  "Thresholds fixed in doomsday/experiments/specs.py before execution."
+ ],
+ "acceptance_criteria": [
+  {
+   "recall_at_tau_min": 0.9,
+   "top10_overlap_min": 0.5,
+   "top10_overlap_definition": "|tie-expanded DC top-10 INTERSECT tie-expanded AC top-10| / |tie-expanded AC top-10| (share of AC's worst sets that DC also ranks in its top-10); label: DC positive = S_dc >= tau, AC positive = S_ac >= tau",
+   "verdict_if_met": "DC screening trustworthy for this model",
+   "verdict_if_not": "DC is a poor proxy here"
+  }
+ ],
+ "implementation": {
+  "package_version": "0.1.0",
+  "source_sha256": "dbe99ef5edd63f6cce17abfe9bd354a6fb4ab1b496319b052ea917d3df389b53"
+ },
+ "environment": {
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v153-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1",
+  "matplotlib": "3.11.2",
+  "doomsday": "0.1.0",
+  "threads_env": {
+   "OMP_NUM_THREADS": "1",
+   "OPENBLAS_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "cpu_count": 2
+ },
+ "runtime_s": 469.52705767000043,
+ "outputs": {
+  "results/phase7/E3/result.json": "93ad64f535b55f496178b1c3997adfc9b2c52b04442f247f38da6649b1ca4dd2"
+ },
+ "result_digest": "ab9e75a2f8f82718875423567c03dea19802f8904a2b20c515652e8a7b45b370",
+ "generated_utc": "2026-10-23T13:25:46Z"
+}

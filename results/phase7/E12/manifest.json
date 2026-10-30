@@ -1,0 +1,138 @@
+{
+ "experiment_id": "E12",
+ "name": "Fixed-point precision and truncation",
+ "v2_section": "17.1; 18 E12",
+ "priority": "S",
+ "status": "EXECUTED",
+ "data_status": "OFFICIAL_DATA",
+ "evidence_label": "[EXECUTED] [MEASURED]",
+ "parts": [
+  {
+   "name": "fixed_point[ieee14,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "fixed_point[ieee30,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee30",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "fixed_point[ieee118,k=2]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee118",
+   "reason": "",
+   "label": "[MEASURED]"
+  }
+ ],
+ "config": {
+  "file": "doomsday/experiments/specs.py",
+  "params": {},
+  "datasets": [
+   {
+    "name": "ieee14",
+    "role": "pre_registered"
+   },
+   {
+    "name": "ieee30",
+    "role": "pre_registered"
+   },
+   {
+    "name": "ieee118",
+    "role": "pre_registered"
+   }
+  ],
+  "config_hash": "22f912d627340bedc72fdafe1df154cbac569ec143273c25767f690bab1ee1d3",
+  "base_config_hash": "15ac98ee0c4a01f566b427789c247b0c9519ff736a6f65d83c76aec60810cc68"
+ },
+ "datasets": {
+  "ieee118": {
+   "name": "ieee118",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "bc2e6f22b4b9e776572885ee4b50e4f4ab2ee0c5577e9126e86d906f14c4b5f7",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  },
+  "ieee14": {
+   "name": "ieee14",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "2ffc4e1b734ae6c5e92dbe68b4e36010ed695a4bbcc4d065c74c4fbc39fcf3c1",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  },
+  "ieee30": {
+   "name": "ieee30",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "3d9030311259b553be85d02336b7e1bcb24ec04775bee6671bdb62d18e4e2137",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  }
+ },
+ "seeds": [],
+ "parameters_and_stopping_conditions": {
+  "bits": [
+   12,
+   16,
+   20,
+   24,
+   32
+  ]
+ },
+ "accounting": {
+  "classical_function_evaluations": null,
+  "quantum_oracle_calls_emulated": null,
+  "classical_verification_calls": null,
+  "preprocessing_evaluations": null,
+  "estimated_quantum_runtime_s": null,
+  "notes": ""
+ },
+ "limitations": [
+  "IEEE-118 at k=2 (specs.DEVIATIONS E12-118).",
+  "Quantisation applied to injections, flows and ratings of each DC solve."
+ ],
+ "acceptance_criteria": [
+  {
+   "label_agreement_min": 1.0,
+   "top10_jaccard_min": 1.0,
+   "rule": "minimum passing b = smallest b whose high-severity labels (S>=tau) agree on every set AND whose tie-expanded top-10 equals the float64 top-10"
+  }
+ ],
+ "implementation": {
+  "package_version": "0.1.0",
+  "source_sha256": "dbe99ef5edd63f6cce17abfe9bd354a6fb4ab1b496319b052ea917d3df389b53"
+ },
+ "environment": {
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v153-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1",
+  "matplotlib": "3.11.2",
+  "doomsday": "0.1.0",
+  "threads_env": {
+   "OMP_NUM_THREADS": "1",
+   "OPENBLAS_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "cpu_count": 2
+ },
+ "runtime_s": 807.5045375410009,
+ "outputs": {
+  "results/phase7/E12/result.json": "9b7280471871f68f94ab9723504c13216f4ebd8b2cd86377d852d20bfdccd913"
+ },
+ "result_digest": "ea9e828bc6a65f3b2aa6c403f1baf63f26429cb844fb15d08b34d25617eca03c",
+ "generated_utc": "2026-10-23T13:39:14Z"
+}

@@ -1,0 +1,103 @@
+{
+ "experiment_id": "E5",
+ "name": "Grover dynamics, ideal and noisy",
+ "v2_section": "13.1; 18 E5",
+ "priority": "S (ideal M)",
+ "status": "EXECUTED",
+ "data_status": "OFFICIAL_DATA",
+ "evidence_label": "[EXECUTED] [SIMULATED] Qiskit Aer simulation (classical simulator of an ideal or noise-modelled device; not hardware)",
+ "parts": [
+  {
+   "name": "aer_ideal_and_noisy[m6_k2]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "AER_SIMULATED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[SIMULATED] Qiskit Aer simulation (classical simulator of an ideal or noise-modelled device; not hardware)"
+  },
+  {
+   "name": "aer_ideal_and_noisy[m8_k3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "AER_SIMULATED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[SIMULATED] Qiskit Aer simulation (classical simulator of an ideal or noise-modelled device; not hardware)"
+  }
+ ],
+ "config": {
+  "file": "doomsday/experiments/specs.py",
+  "params": {
+   "shots": 20000
+  },
+  "datasets": [],
+  "config_hash": "318470f2a94451d3e3abafa9d2fe6a3db8e285be6a232050e4217770061601de",
+  "base_config_hash": "15ac98ee0c4a01f566b427789c247b0c9519ff736a6f65d83c76aec60810cc68"
+ },
+ "datasets": {
+  "ieee14": {
+   "name": "ieee14",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "2ffc4e1b734ae6c5e92dbe68b4e36010ed695a4bbcc4d065c74c4fbc39fcf3c1",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  }
+ },
+ "seeds": [
+  0
+ ],
+ "parameters_and_stopping_conditions": {
+  "toys": [
+   [
+    6,
+    2
+   ],
+   [
+    8,
+    3
+   ]
+  ],
+  "shots": 20000,
+  "noisy_shots": 4000
+ },
+ "accounting": {
+  "classical_function_evaluations": null,
+  "quantum_oracle_calls_emulated": null,
+  "classical_verification_calls": null,
+  "preprocessing_evaluations": null,
+  "estimated_quantum_runtime_s": null,
+  "notes": ""
+ },
+ "limitations": [
+  "Aer is a classical simulator; the noisy runs use a fake-backend noise model (device snapshot), not a device.",
+  "Ideal runs pass only if every r agrees with the NumPy statevector within 4 sigma (EXECUTED_VERIFIED)."
+ ],
+ "acceptance_criteria": [],
+ "implementation": {
+  "package_version": "0.1.0",
+  "source_sha256": "0859ee9c4e81d558920f1c5307078ea51f1485d45977a2f4b128a39b01a6c5bb"
+ },
+ "environment": {
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v153-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1",
+  "matplotlib": "3.11.2",
+  "doomsday": "0.1.0",
+  "threads_env": {
+   "OMP_NUM_THREADS": "1",
+   "OPENBLAS_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "cpu_count": 2
+ },
+ "runtime_s": 1484.9440228929998,
+ "outputs": {
+  "results/phase7/E5/result.json": "b69ef357a54469876a182e41de186cafcf5d5041b6d477f449bfbab2f29aa2b4"
+ },
+ "result_digest": "75d74f95ab264a3abf9ed2942fa5d2d298bfb2d26a5178dc11c80f0229e5f3ec",
+ "generated_utc": "2026-10-23T11:17:36Z"
+}

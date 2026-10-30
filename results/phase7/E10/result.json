@@ -1,0 +1,536 @@
+{
+ "experiment_id": "E10",
+ "payload": {
+  "rules": {
+   "grid": "ieee14",
+   "shots": 4096,
+   "p_max": 4,
+   "starts": 10,
+   "T_verify": 10,
+   "n_train": [
+    100,
+    200,
+    400,
+    800
+   ],
+   "ridge_k2": 1e-06,
+   "ridge_k3": 0.001,
+   "planted": {
+    "L": 20,
+    "k": 3,
+    "seed": 0,
+    "rule": "recovered iff x* appears in the 4096 shots AND P(x*) >= 10/N at the best p"
+   },
+   "verify_rule": "top-T = the T distinct sampled strings with the highest SURROGATE value; each is evaluated with the true oracle (T calls)",
+   "aer_crosscheck": {
+    "candidates": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "k": 2,
+    "p": 2,
+    "tol": 1e-08
+   }
+  },
+  "label": "QAOA optimises a fitted quadratic SURROGATE objective, never S itself",
+  "E10a_planted": {
+   "L": 20,
+   "k": 3,
+   "N": 1140,
+   "x_star": [
+    5,
+    7,
+    19
+   ],
+   "planted_unique_max": true,
+   "per_p": {
+    "1": {
+     "P_xstar": 0.005337922508878102,
+     "xstar_sampled": true,
+     "expected_cost": 0.1628640699200169,
+     "most_probable_is_xstar": false
+    },
+    "2": {
+     "P_xstar": 0.00250057537005899,
+     "xstar_sampled": true,
+     "expected_cost": 0.22894491365898723,
+     "most_probable_is_xstar": false
+    },
+    "3": {
+     "P_xstar": 0.009714612513648418,
+     "xstar_sampled": true,
+     "expected_cost": 0.2879296306376272,
+     "most_probable_is_xstar": false
+    },
+    "4": {
+     "P_xstar": 0.013793228708609743,
+     "xstar_sampled": true,
+     "expected_cost": 0.34152022087901746,
+     "most_probable_is_xstar": false
+    }
+   },
+   "best_p": 4,
+   "recovered": true,
+   "uniform_P": 0.0008771929824561404
+  },
+  "E10b_k2_exact": {
+   "N": 190,
+   "fit": {
+    "n_train": 190,
+    "n_params": 211,
+    "effective_rank": 190,
+    "ridge": 1e-06,
+    "note": "with |x| = k fixed, constant/linear/quadratic columns are partly collinear (V2 14.1); ridge resolves it"
+   },
+   "R2_all": 0.9999999999993595,
+   "max_abs_fit_error": 3.666137479707565e-07,
+   "true_oracle_calls": 200,
+   "note": "exact fit needs all C(L,2) evaluations = brute force: no oracle-call advantage by construction",
+   "classical_surrogate_optimum_true_S": 0.5219726219726218,
+   "Smax": 0.5219726219726218,
+   "per_p": {
+    "1": {
+     "expected_surrogate": 0.18221083671058705,
+     "surrogate_optimum": 0.5219722674262627,
+     "p_surrogate_optimum": 0.005881875832257538,
+     "p_true_argmax_set": 0.005881875832257538,
+     "best_verified_true_S": 0.5219726219726218,
+     "approximation_ratio_true": 1.0,
+     "top1_agreement": true,
+     "top1pct_overlap_of_topT": 0.2,
+     "enrichment_over_random": 20.0,
+     "error_i_optimizer_surrogate_gap": 0.0,
+     "verified_T": 10,
+     "nfev_best": 170
+    },
+    "2": {
+     "expected_surrogate": 0.2358985160159889,
+     "surrogate_optimum": 0.5219722674262627,
+     "p_surrogate_optimum": 0.012647070436391688,
+     "p_true_argmax_set": 0.012647070436391688,
+     "best_verified_true_S": 0.5219726219726218,
+     "approximation_ratio_true": 1.0,
+     "top1_agreement": true,
+     "top1pct_overlap_of_topT": 0.2,
+     "enrichment_over_random": 20.0,
+     "error_i_optimizer_surrogate_gap": 0.0,
+     "verified_T": 10,
+     "nfev_best": 274
+    },
+    "3": {
+     "expected_surrogate": 0.276660103975448,
+     "surrogate_optimum": 0.5219722674262627,
+     "p_surrogate_optimum": 0.036350188904743196,
+     "p_true_argmax_set": 0.036350188904743196,
+     "best_verified_true_S": 0.5219726219726218,
+     "approximation_ratio_true": 1.0,
+     "top1_agreement": true,
+     "top1pct_overlap_of_topT": 0.2,
+     "enrichment_over_random": 20.0,
+     "error_i_optimizer_surrogate_gap": 0.0,
+     "verified_T": 10,
+     "nfev_best": 400
+    },
+    "4": {
+     "expected_surrogate": 0.304885063076865,
+     "surrogate_optimum": 0.5219722674262627,
+     "p_surrogate_optimum": 0.04501383315062078,
+     "p_true_argmax_set": 0.04501383315062078,
+     "best_verified_true_S": 0.5219726219726218,
+     "approximation_ratio_true": 1.0,
+     "top1_agreement": true,
+     "top1pct_overlap_of_topT": 0.2,
+     "enrichment_over_random": 20.0,
+     "error_i_optimizer_surrogate_gap": 0.0,
+     "verified_T": 10,
+     "nfev_best": 400
+    }
+   }
+  },
+  "E10c_k3_gap": {
+   "N": 1140,
+   "pairs_mode": "sparse (neighbour / parallel / top-2L |LODF|)",
+   "rows": {
+    "100": {
+     "fit": {
+      "n_train": 100,
+      "n_params": 85,
+      "effective_rank": 68,
+      "ridge": 0.001,
+      "note": "with |x| = k fixed, constant/linear/quadratic columns are partly collinear (V2 14.1); ridge resolves it"
+     },
+     "n_pairs": 64,
+     "heldout_R2": 0.1377268051791748,
+     "heldout_spearman": 0.5301492869934078,
+     "heldout_top1pct_R2": -3385.3852086114903,
+     "heldout_top1pct_spearman": -0.9056121438105145,
+     "n_heldout_top1pct": 12,
+     "true_oracle_calls": 110,
+     "brute_force_calls": 1140,
+     "classical_surrogate_optimum_true_S": 0.4926289926289925,
+     "error_ii_model_gap_true": 0.03945409609126438,
+     "Smax": 0.5320830887202569,
+     "per_p": {
+      "1": {
+       "expected_surrogate": 0.3113820155213169,
+       "surrogate_optimum": 1.0095486545377748,
+       "p_surrogate_optimum": 0.005548090603240254,
+       "p_true_argmax_set": 0.002475774188881705,
+       "best_verified_true_S": 0.4926289926289925,
+       "approximation_ratio_true": 0.9258497461624694,
+       "top1_agreement": false,
+       "top1pct_overlap_of_topT": 0.0,
+       "enrichment_over_random": 0.0,
+       "error_i_optimizer_surrogate_gap": 0.0,
+       "verified_T": 10,
+       "nfev_best": 400
+      },
+      "2": {
+       "expected_surrogate": 0.37366013076640503,
+       "surrogate_optimum": 1.0095486545377748,
+       "p_surrogate_optimum": 0.005657221174926064,
+       "p_true_argmax_set": 0.0008845887545706048,
+       "best_verified_true_S": 0.4926289926289925,
+       "approximation_ratio_true": 0.9258497461624694,
+       "top1_agreement": false,
+       "top1pct_overlap_of_topT": 0.0,
+       "enrichment_over_random": 0.0,
+       "error_i_optimizer_surrogate_gap": 0.0,
+       "verified_T": 10,
+       "nfev_best": 400
+      },
+      "3": {
+       "expected_surrogate": 0.40259072421216346,
+       "surrogate_optimum": 1.0095486545377748,
+       "p_surrogate_optimum": 0.007666472270067289,
+       "p_true_argmax_set": 0.0006118187526529108,
+       "best_verified_true_S": 0.5219726219726218,
+       "approximation_ratio_true": 0.9809983309712919,
+       "top1_agreement": false,
+       "top1pct_overlap_of_topT": 0.1,
+       "enrichment_over_random": 10.0,
+       "error_i_optimizer_surrogate_gap": 0.0,
+       "verified_T": 10,
+       "nfev_best": 400
+      },
+      "4": {
+       "expected_surrogate": 0.4259699659130719,
+       "surrogate_optimum": 1.0095486545377748,
+       "p_surrogate_optimum": 0.010546697607144299,
+       "p_true_argmax_set": 0.0011449892364715627,
+       "best_verified_true_S": 0.4926289926289925,
+       "approximation_ratio_true": 0.9258497461624694,
+       "top1_agreement": false,
+       "top1pct_overlap_of_topT": 0.0,
+       "enrichment_over_random": 0.0,
+       "error_i_optimizer_surrogate_gap": 0.0,
+       "verified_T": 10,
+       "nfev_best": 400
+      }
+     }
+    },
+    "200": {
+     "fit": {
+      "n_train": 200,
+      "n_params": 85,
+      "effective_rank": 82,
+      "ridge": 0.001,
+      "note": "with |x| = k fixed, constant/linear/quadratic columns are partly collinear (V2 14.1); ridge resolves it"
+     },
+     "n_pairs": 64,
+     "heldout_R2": 0.32386173537469676,
+     "heldout_spearman": 0.5845576712252653,
+     "heldout_top1pct_R2": -1284.7804870403997,
+     "heldout_top1pct_spearman": -0.7020607444722237,
+     "n_heldout_top1pct": 11,
+     "true_oracle_calls": 210,
+     "brute_force_calls": 1140,
+     "classical_surrogate_optimum_true_S": 0.46907686907686896,
+     "error_ii_model_gap_true": 0.06300621964338793,
+     "Smax": 0.5320830887202569,
+     "per_p": {
+      "1": {
+       "expected_surrogate": 0.2760954305615681,
+       "surrogate_optimum": 1.08980096901389,
+       "p_surrogate_optimum": 0.0012465109352900485,
+       "p_true_argmax_set": 0.002435639898969875,
+       "best_verified_true_S": 0.4926289926289925,
+       "approximation_ratio_true": 0.9258497461624694,
+       "top1_agreement": false,
+       "top1pct_overlap_of_topT": 0.0,
+       "enrichment_over_random": 0.0,
+       "error_i_optimizer_surrogate_gap": 0.0,
+       "verified_T": 10,
+       "nfev_best": 400
+      },
+      "2": {
+       "expected_surrogate": 0.3297693892182305,
+       "surrogate_optimum": 1.08980096901389,
+       "p_surrogate_optimum": 0.0012866106166447985,
+       "p_true_argmax_set": 0.0018223025874768272,
+       "best_verified_true_S": 0.4926289926289925,
+       "approximation_ratio_true": 0.9258497461624694,
+       "top1_agreement": false,
+       "top1pct_overlap_of_topT": 0.0,
+       "enrichment_over_random": 0.0,
+       "error_i_optimizer_surrogate_gap": 0.0,
+       "verified_T": 10,
+       "nfev_best": 400
+      },
+      "3": {
+       "expected_surrogate": 0.3729451750916334,
+       "surrogate_optimum": 1.08980096901389,
+       "p_surrogate_optimum": 0.002249871137534798,
+       "p_true_argmax_set": 0.0010695980494613453,
+       "best_verified_true_S": 0.4926289926289925,
+       "approximation_ratio_true": 0.9258497461624694,
+       "top1_agreement": false,
+       "top1pct_overlap_of_topT": 0.0,
+       "enrichment_over_random": 0.0,
+       "error_i_optimizer_surrogate_gap": 0.0,
+       "verified_T": 10,
+       "nfev_best": 400
+      },
+      "4": {
+       "expected_surrogate": 0.3979630933375161,
+       "surrogate_optimum": 1.08980096901389,
+       "p_surrogate_optimum": 0.003506253210773464,
+       "p_true_argmax_set": 0.0012767013250952102,
+       "best_verified_true_S": 0.4926289926289925,
+       "approximation_ratio_true": 0.9258497461624694,
+       "top1_agreement": false,
+       "top1pct_overlap_of_topT": 0.0,
+       "enrichment_over_random": 0.0,
+       "error_i_optimizer_surrogate_gap": 0.0,
+       "verified_T": 10,
+       "nfev_best": 400
+      }
+     }
+    },
+    "400": {
+     "fit": {
+      "n_train": 400,
+      "n_params": 85,
+      "effective_rank": 84,
+      "ridge": 0.001,
+      "note": "with |x| = k fixed, constant/linear/quadratic columns are partly collinear (V2 14.1); ridge resolves it"
+     },
+     "n_pairs": 64,
+     "heldout_R2": 0.4793990772746686,
+     "heldout_spearman": 0.6562372344682023,
+     "heldout_top1pct_R2": -2032.2294320558742,
+     "heldout_top1pct_spearman": -0.23904572186687875,
+     "n_heldout_top1pct": 6,
+     "true_oracle_calls": 410,
+     "brute_force_calls": 1140,
+     "classical_surrogate_optimum_true_S": 0.46907686907686896,
+     "error_ii_model_gap_true": 0.06300621964338793,
+     "Smax": 0.5320830887202569,
+     "per_p": {
+      "1": {
+       "expected_surrogate": 0.2667810327603745,
+       "surrogate_optimum": 0.7696470189419427,
+       "p_surrogate_optimum": 0.0007086160752614735,
+       "p_true_argmax_set": 0.004032410589025033,
+       "best_verified_true_S": 0.4926289926289925,
+       "approximation_ratio_true": 0.9258497461624694,
+       "top1_agreement": false,
+       "top1pct_overlap_of_topT": 0.0,
+       "enrichment_over_random": 0.0,
+       "error_i_optimizer_surrogate_gap": 0.08537294320700428,
+       "verified_T": 10,
+       "nfev_best": 283
+      },
+      "2": {
+       "expected_surrogate": 0.3095884805957702,
+       "surrogate_optimum": 0.7696470189419427,
+       "p_surrogate_optimum": 0.0018178026398242779,
+       "p_true_argmax_set": 0.0043831606335664585,
+       "best_verified_true_S": 0.4926289926289925,
+       "approximation_ratio_true": 0.9258497461624694,
+       "top1_agreement": false,
+       "top1pct_overlap_of_topT": 0.0,
+       "enrichment_over_random": 0.0,
+       "error_i_optimizer_surrogate_gap": 0.0,
+       "verified_T": 10,
+       "nfev_best": 400
+      },
+      "3": {
+       "expected_surrogate": 0.3408743244235741,
+       "surrogate_optimum": 0.7696470189419427,
+       "p_surrogate_optimum": 0.003482771697076471,
+       "p_true_argmax_set": 0.006685953956420567,
+       "best_verified_true_S": 0.4926289926289925,
+       "approximation_ratio_true": 0.9258497461624694,
+       "top1_agreement": false,
+       "top1pct_overlap_of_topT": 0.0,
+       "enrichment_over_random": 0.0,
+       "error_i_optimizer_surrogate_gap": 0.0,
+       "verified_T": 10,
+       "nfev_best": 400
+      },
+      "4": {
+       "expected_surrogate": 0.3632199533049084,
+       "surrogate_optimum": 0.7696470189419427,
+       "p_surrogate_optimum": 0.0059356700272186515,
+       "p_true_argmax_set": 0.010782160904213996,
+       "best_verified_true_S": 0.4926289926289925,
+       "approximation_ratio_true": 0.9258497461624694,
+       "top1_agreement": false,
+       "top1pct_overlap_of_topT": 0.0,
+       "enrichment_over_random": 0.0,
+       "error_i_optimizer_surrogate_gap": 0.0,
+       "verified_T": 10,
+       "nfev_best": 400
+      }
+     }
+    },
+    "800": {
+     "fit": {
+      "n_train": 800,
+      "n_params": 85,
+      "effective_rank": 84,
+      "ridge": 0.001,
+      "note": "with |x| = k fixed, constant/linear/quadratic columns are partly collinear (V2 14.1); ridge resolves it"
+     },
+     "n_pairs": 64,
+     "heldout_R2": 0.5208734710077569,
+     "heldout_spearman": 0.6748045425816115,
+     "heldout_top1pct_R2": -2318.1091606290383,
+     "heldout_top1pct_spearman": -0.7715167498104596,
+     "n_heldout_top1pct": 6,
+     "true_oracle_calls": 810,
+     "brute_force_calls": 1140,
+     "classical_surrogate_optimum_true_S": 0.46907686907686896,
+     "error_ii_model_gap_true": 0.06300621964338793,
+     "Smax": 0.5320830887202569,
+     "per_p": {
+      "1": {
+       "expected_surrogate": 0.2629657776252863,
+       "surrogate_optimum": 1.0137373884427419,
+       "p_surrogate_optimum": 0.0005550186951605173,
+       "p_true_argmax_set": 0.0035206979666166484,
+       "best_verified_true_S": 0.5068596607341994,
+       "approximation_ratio_true": 0.9525949451866178,
+       "top1_agreement": false,
+       "top1pct_overlap_of_topT": 0.0,
+       "enrichment_over_random": 0.0,
+       "error_i_optimizer_surrogate_gap": 0.137449783368353,
+       "verified_T": 10,
+       "nfev_best": 400
+      },
+      "2": {
+       "expected_surrogate": 0.31292287872417834,
+       "surrogate_optimum": 1.0137373884427419,
+       "p_surrogate_optimum": 0.0008428376047915522,
+       "p_true_argmax_set": 0.0023382493010914852,
+       "best_verified_true_S": 0.5068596607341994,
+       "approximation_ratio_true": 0.9525949451866178,
+       "top1_agreement": false,
+       "top1pct_overlap_of_topT": 0.0,
+       "enrichment_over_random": 0.0,
+       "error_i_optimizer_surrogate_gap": 0.0,
+       "verified_T": 10,
+       "nfev_best": 400
+      },
+      "3": {
+       "expected_surrogate": 0.3420414792188998,
+       "surrogate_optimum": 1.0137373884427419,
+       "p_surrogate_optimum": 0.0021056537717446594,
+       "p_true_argmax_set": 0.003366671730278155,
+       "best_verified_true_S": 0.5068596607341994,
+       "approximation_ratio_true": 0.9525949451866178,
+       "top1_agreement": false,
+       "top1pct_overlap_of_topT": 0.0,
+       "enrichment_over_random": 0.0,
+       "error_i_optimizer_surrogate_gap": 0.0,
+       "verified_T": 10,
+       "nfev_best": 400
+      },
+      "4": {
+       "expected_surrogate": 0.3690574417255682,
+       "surrogate_optimum": 1.0137373884427419,
+       "p_surrogate_optimum": 0.00341147703512127,
+       "p_true_argmax_set": 0.005565120163516175,
+       "best_verified_true_S": 0.5068596607341994,
+       "approximation_ratio_true": 0.9525949451866178,
+       "top1_agreement": false,
+       "top1pct_overlap_of_topT": 0.0,
+       "enrichment_over_random": 0.0,
+       "error_i_optimizer_surrogate_gap": 0.0,
+       "verified_T": 10,
+       "nfev_best": 400
+      }
+     }
+    }
+   }
+  },
+  "aer_crosscheck": {
+   "candidates": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "k": 2,
+   "L": 10,
+   "N": 45,
+   "p": 2,
+   "max_abs_prob_diff_subspace_vs_aer": 1.3877787807814457e-16,
+   "pass": true,
+   "leak_outside_weight_k": -2.220446049250313e-16,
+   "per_layer_depth": 40,
+   "per_layer_cx": 110,
+   "dicke_prep_cx": 116
+  }
+ },
+ "timing": {},
+ "parts": [
+  {
+   "name": "E10a_planted_quadratic",
+   "status": "EXECUTED",
+   "data_status": "NO_GRID_DATA",
+   "kind": "NUMPY_STATEVECTOR",
+   "reason": "",
+   "dataset": null
+  },
+  {
+   "name": "E10b_k2_exact_surrogate",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "NUMPY_STATEVECTOR",
+   "reason": "",
+   "dataset": "ieee14"
+  },
+  {
+   "name": "E10c_k3_surrogate_gap",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "NUMPY_STATEVECTOR",
+   "reason": "",
+   "dataset": "ieee14"
+  },
+  {
+   "name": "E10_aer_crosscheck_L10",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "AER_SIMULATED",
+   "reason": "",
+   "dataset": "ieee14"
+  }
+ ]
+}

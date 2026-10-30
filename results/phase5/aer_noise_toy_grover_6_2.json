@@ -1,0 +1,25 @@
+{
+ "toy": {
+  "m": 6,
+  "k": 2,
+  "N": 15,
+  "M": 1,
+  "candidates": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "shots": 4096,
+ "rmax": 6,
+ "mode": "noise-model from fake backend 'FakeSherbrooke'",
+ "environment": {
+  "reason": "ModuleNotFoundError: No module named 'qiskit'"
+ },
+ "status": "NOT_RUN",
+ "reason": "qiskit/qiskit-aer unavailable in this environment; no Aer execution took place",
+ "grid_provenance": "ieee14 transcribed_from_memory_UNVERIFIED"
+}

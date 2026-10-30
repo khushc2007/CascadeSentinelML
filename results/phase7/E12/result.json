@@ -1,0 +1,348 @@
+{
+ "experiment_id": "E12",
+ "payload": {
+  "bits": [
+   12,
+   16,
+   20,
+   24,
+   32
+  ],
+  "rule": {
+   "label_agreement_min": 1.0,
+   "top10_jaccard_min": 1.0,
+   "rule": "minimum passing b = smallest b whose high-severity labels (S>=tau) agree on every set AND whose tie-expanded top-10 equals the float64 top-10"
+  },
+  "Q_format": "4 integer bits (incl. sign), b-4 fractional, per unit on base MVA",
+  "ieee14_k3": {
+   "per_b": {
+    "12": {
+     "max_severity_error": 0.3332046332046332,
+     "mean_severity_error": 0.000578811894601368,
+     "label_agreement": 0.9991228070175439,
+     "label_flips": 1,
+     "top10_jaccard": 1.0,
+     "top10_equal": true,
+     "top100_jaccard": 0.9875,
+     "spearman": 0.9984806156654545,
+     "passes": false
+    },
+    "16": {
+     "max_severity_error": 0.0,
+     "mean_severity_error": 0.0,
+     "label_agreement": 1.0,
+     "label_flips": 0,
+     "top10_jaccard": 1.0,
+     "top10_equal": true,
+     "top100_jaccard": 1.0,
+     "spearman": 1.0,
+     "passes": true
+    },
+    "20": {
+     "max_severity_error": 0.0,
+     "mean_severity_error": 0.0,
+     "label_agreement": 1.0,
+     "label_flips": 0,
+     "top10_jaccard": 1.0,
+     "top10_equal": true,
+     "top100_jaccard": 1.0,
+     "spearman": 1.0,
+     "passes": true
+    },
+    "24": {
+     "max_severity_error": 0.0,
+     "mean_severity_error": 0.0,
+     "label_agreement": 1.0,
+     "label_flips": 0,
+     "top10_jaccard": 1.0,
+     "top10_equal": true,
+     "top100_jaccard": 1.0,
+     "spearman": 1.0,
+     "passes": true
+    },
+    "32": {
+     "max_severity_error": 0.0,
+     "mean_severity_error": 0.0,
+     "label_agreement": 1.0,
+     "label_flips": 0,
+     "top10_jaccard": 1.0,
+     "top10_equal": true,
+     "top100_jaccard": 1.0,
+     "spearman": 1.0,
+     "passes": true
+    }
+   },
+   "min_passing_b": 16,
+   "flow_and_borderline": {
+    "n_sets": 300,
+    "max_flow_error_pu": {
+     "12": 0.004174560119714101,
+     "16": 0.00032499999999977545,
+     "20": 2.7636718757833024e-05,
+     "24": 1.091437945675011e-06,
+     "32": 5.227332877666413e-09
+    },
+    "mean_of_max_flow_error_pu": {
+     "12": 0.0026951206167689,
+     "16": 0.00020027036671583015,
+     "20": 1.83126514797402e-05,
+     "24": 6.904902948034179e-07,
+     "32": 3.5816685735638263e-09
+    },
+    "borderline_fraction": {
+     "12": 0.005294117647058823,
+     "16": 0.000588235294117647,
+     "20": 0.0,
+     "24": 0.0,
+     "32": 0.0
+    },
+    "cond_I_minus_PhiKK": {
+     "mean": 4.730993791167484,
+     "median": 3.7359084745526983,
+     "p95": 9.028943394529813,
+     "max": 29.26082751590895,
+     "min": 1.1471544372187406,
+     "n": 300
+    }
+   },
+   "truncation_R_float": {
+    "R_p95_from_E2": 5,
+    "max_severity_error": 0.35942435942435935,
+    "label_flips": 4,
+    "top10_jaccard": 1.0
+   }
+  },
+  "ieee30_k3": {
+   "per_b": {
+    "12": {
+     "max_severity_error": 0.7104825163452583,
+     "mean_severity_error": 0.024059783825140298,
+     "label_agreement": 0.9545028142589118,
+     "label_flips": 485,
+     "top10_jaccard": 1.0,
+     "top10_equal": true,
+     "top100_jaccard": 0.75,
+     "spearman": 0.9229507270394609,
+     "passes": false
+    },
+    "16": {
+     "max_severity_error": 0.6416490486257929,
+     "mean_severity_error": 0.001190797851679697,
+     "label_agreement": 0.9984052532833021,
+     "label_flips": 17,
+     "top10_jaccard": 1.0,
+     "top10_equal": true,
+     "top100_jaccard": 1.0,
+     "spearman": 0.9967774457201545,
+     "passes": false
+    },
+    "20": {
+     "max_severity_error": 0.33008878924531027,
+     "mean_severity_error": 9.70440932291321e-05,
+     "label_agreement": 0.999906191369606,
+     "label_flips": 1,
+     "top10_jaccard": 1.0,
+     "top10_equal": true,
+     "top100_jaccard": 1.0,
+     "spearman": 0.9998685196650967,
+     "passes": false
+    },
+    "24": {
+     "max_severity_error": 0.0,
+     "mean_severity_error": 0.0,
+     "label_agreement": 1.0,
+     "label_flips": 0,
+     "top10_jaccard": 1.0,
+     "top10_equal": true,
+     "top100_jaccard": 1.0,
+     "spearman": 1.0,
+     "passes": true
+    },
+    "32": {
+     "max_severity_error": 0.0,
+     "mean_severity_error": 0.0,
+     "label_agreement": 1.0,
+     "label_flips": 0,
+     "top10_jaccard": 1.0,
+     "top10_equal": true,
+     "top100_jaccard": 1.0,
+     "spearman": 1.0,
+     "passes": true
+    }
+   },
+   "min_passing_b": 24,
+   "flow_and_borderline": {
+    "n_sets": 300,
+    "max_flow_error_pu": {
+     "12": 0.00896124776381061,
+     "16": 0.0003668107036745738,
+     "20": 2.6256190942923752e-05,
+     "24": 2.4143330327675015e-06,
+     "32": 3.905390375535944e-09
+    },
+    "mean_of_max_flow_error_pu": {
+     "12": 0.006539419548506404,
+     "16": 0.00023765041209360322,
+     "20": 1.4645600139956173e-05,
+     "24": 1.6519713782365616e-06,
+     "32": 2.7522941316249217e-09
+    },
+    "borderline_fraction": {
+     "12": 0.013508771929824562,
+     "16": 0.0005263157894736842,
+     "20": 0.00017543859649122806,
+     "24": 0.0,
+     "32": 0.0
+    },
+    "cond_I_minus_PhiKK": {
+     "mean": 4.028232936543045,
+     "median": 3.023967519167456,
+     "p95": 7.771359794584296,
+     "max": 44.800583666392725,
+     "min": 1.2922114745694362,
+     "n": 300
+    }
+   },
+   "truncation_R_float": {
+    "R_p95_from_E2": 6,
+    "max_severity_error": 0.6154892432335919,
+    "label_flips": 78,
+    "top10_jaccard": 1.0
+   }
+  },
+  "ieee118_k2": {
+   "per_b": {
+    "12": {
+     "max_severity_error": 0.15374394582315398,
+     "mean_severity_error": 0.00028942738314427047,
+     "label_agreement": 1.0,
+     "label_flips": 0,
+     "top10_jaccard": 1.0,
+     "top10_equal": true,
+     "top100_jaccard": 0.8392857142857143,
+     "spearman": 0.9930694542591184,
+     "passes": true
+    },
+    "16": {
+     "max_severity_error": 0.1305266890325395,
+     "mean_severity_error": 2.899484912202315e-05,
+     "label_agreement": 1.0,
+     "label_flips": 0,
+     "top10_jaccard": 1.0,
+     "top10_equal": true,
+     "top100_jaccard": 1.0,
+     "spearman": 0.9989568520919359,
+     "passes": true
+    },
+    "20": {
+     "max_severity_error": 0.01643303586060907,
+     "mean_severity_error": 2.115788411143367e-06,
+     "label_agreement": 1.0,
+     "label_flips": 0,
+     "top10_jaccard": 1.0,
+     "top10_equal": true,
+     "top100_jaccard": 1.0,
+     "spearman": 0.9999998315964483,
+     "passes": true
+    },
+    "24": {
+     "max_severity_error": 0.0,
+     "mean_severity_error": 0.0,
+     "label_agreement": 1.0,
+     "label_flips": 0,
+     "top10_jaccard": 1.0,
+     "top10_equal": true,
+     "top100_jaccard": 1.0,
+     "spearman": 1.0,
+     "passes": true
+    },
+    "32": {
+     "max_severity_error": 0.0,
+     "mean_severity_error": 0.0,
+     "label_agreement": 1.0,
+     "label_flips": 0,
+     "top10_jaccard": 1.0,
+     "top10_equal": true,
+     "top100_jaccard": 1.0,
+     "spearman": 1.0,
+     "passes": true
+    }
+   },
+   "min_passing_b": 12,
+   "flow_and_borderline": {
+    "n_sets": 300,
+    "max_flow_error_pu": {
+     "12": 0.0076937766119201,
+     "16": 0.000322893373580726,
+     "20": 3.374545841978715e-05,
+     "24": 2.7210565198743095e-06,
+     "32": 2.073800970947559e-08
+    },
+    "mean_of_max_flow_error_pu": {
+     "12": 0.005455729179628778,
+     "16": 0.00023654470618142816,
+     "20": 2.649008362569842e-05,
+     "24": 1.987197426514105e-06,
+     "32": 1.6173233905725227e-08
+    },
+    "borderline_fraction": {
+     "12": 0.0002536231884057971,
+     "16": 0.0,
+     "20": 0.0,
+     "24": 0.0,
+     "32": 0.0
+    },
+    "cond_I_minus_PhiKK": {
+     "mean": 2.70973500991889,
+     "median": 2.0131560482269744,
+     "p95": 6.588069868632844,
+     "max": 12.0277656777502,
+     "min": 1.0043720834051888,
+     "n": 300
+    }
+   },
+   "truncation_R_float": {
+    "R_p95_from_E2": 10,
+    "max_severity_error": 0.04905490549054914,
+    "label_flips": 0,
+    "top10_jaccard": 1.0
+   }
+  },
+  "min_passing_b_overall": 24,
+  "toffoli_per_round_ieee118_realistic": {
+   "12": 3512562.0,
+   "16": 6186658.0,
+   "20": 9624434.0,
+   "24": 13825890.0,
+   "32": 24519842.0
+  },
+  "note": "Q-format emulation of input/output quantisation of the DC solve (cascade.quantize_pu); not a bit-exact reversible-arithmetic model"
+ },
+ "timing": {},
+ "parts": [
+  {
+   "name": "fixed_point[ieee14,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "reason": "",
+   "dataset": "ieee14"
+  },
+  {
+   "name": "fixed_point[ieee30,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "reason": "",
+   "dataset": "ieee30"
+  },
+  {
+   "name": "fixed_point[ieee118,k=2]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "reason": "",
+   "dataset": "ieee118"
+  }
+ ]
+}

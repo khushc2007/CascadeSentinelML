@@ -1,0 +1,54 @@
+{
+ "matpower_dir": "/home/claude/ext/matpower",
+ "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594",
+ "commit_recorded": true,
+ "cases": {
+  "case14": {
+   "official_file": "/home/claude/ext/matpower/data/case14.m",
+   "local_file": "/home/claude/handoff/gdf/doomsday/gridtwin/data/case14.m",
+   "official_sha256": "2ffc4e1b734ae6c5e92dbe68b4e36010ed695a4bbcc4d065c74c4fbc39fcf3c1",
+   "local_sha256": "491a52ce83dc8b3b485a351ac3c3db5d6348c1d9f82cf945840e969dce63cee1",
+   "byte_identical": false,
+   "tables": {
+    "baseMVA": {
+     "match": true,
+     "n_cells": 1,
+     "n_differing_cells": 0,
+     "max_abs_diff": 0.0,
+     "first_differences": []
+    },
+    "bus": {
+     "match": true,
+     "n_cells": 182,
+     "n_differing_cells": 0,
+     "max_abs_diff": 0.0,
+     "first_differences": []
+    },
+    "gen": {
+     "match": false,
+     "reason": "shape (5, 10) vs (5, 21)"
+    },
+    "branch": {
+     "match": false,
+     "reason": "shape (20, 11) vs (20, 13)"
+    }
+   },
+   "status": "DATA_DIFFERS",
+   "installed": true
+  },
+  "case30": {
+   "official_file": "/home/claude/ext/matpower/data/case30.m",
+   "local_file": "/home/claude/handoff/gdf/doomsday/gridtwin/data/case30.m",
+   "official_sha256": "3d9030311259b553be85d02336b7e1bcb24ec04775bee6671bdb62d18e4e2137",
+   "status": "LOCAL_MISSING",
+   "installed": true
+  },
+  "case118": {
+   "official_file": "/home/claude/ext/matpower/data/case118.m",
+   "local_file": "/home/claude/handoff/gdf/doomsday/gridtwin/data/case118.m",
+   "official_sha256": "bc2e6f22b4b9e776572885ee4b50e4f4ab2ee0c5577e9126e86d906f14c4b5f7",
+   "status": "LOCAL_MISSING",
+   "installed": true
+  }
+ }
+}

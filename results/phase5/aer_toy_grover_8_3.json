@@ -1,0 +1,27 @@
+{
+ "toy": {
+  "m": 8,
+  "k": 3,
+  "N": 56,
+  "M": 4,
+  "candidates": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ]
+ },
+ "shots": 4096,
+ "rmax": 6,
+ "mode": "ideal",
+ "environment": {
+  "reason": "ModuleNotFoundError: No module named 'qiskit'"
+ },
+ "status": "NOT_RUN",
+ "reason": "qiskit/qiskit-aer unavailable in this environment; no Aer execution took place",
+ "grid_provenance": "ieee14 transcribed_from_memory_UNVERIFIED"
+}

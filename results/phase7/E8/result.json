@@ -1,0 +1,1090 @@
+{
+ "experiment_id": "E8",
+ "payload": {
+  "ieee14_k3": {
+   "N": 1140,
+   "rows": [
+    {
+     "tau": 0.012706212706212527,
+     "M": 748,
+     "M_over_N": 0.656140350877193,
+     "bbht_quantum_calls": {
+      "mean": 2.685,
+      "median": 1.0,
+      "p95": 9.0,
+      "max": 17.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 1.5233644859813085,
+     "grover_ideal_known_M": 0.9695975470155811,
+     "bbht_cheaper_than_random": false
+    },
+    {
+     "tau": 0.05,
+     "M": 654,
+     "M_over_N": 0.5736842105263158,
+     "bbht_quantum_calls": {
+      "mean": 2.995,
+      "median": 1.5,
+      "p95": 9.0,
+      "max": 27.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 1.7419847328244276,
+     "grover_ideal_known_M": 1.0369395347572263,
+     "bbht_cheaper_than_random": false
+    },
+    {
+     "tau": 0.051608751608751516,
+     "M": 654,
+     "M_over_N": 0.5736842105263158,
+     "bbht_quantum_calls": {
+      "mean": 2.995,
+      "median": 1.5,
+      "p95": 9.0,
+      "max": 27.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 1.7419847328244276,
+     "grover_ideal_known_M": 1.0369395347572263,
+     "bbht_cheaper_than_random": false
+    },
+    {
+     "tau": 0.0744401544401544,
+     "M": 587,
+     "M_over_N": 0.5149122807017544,
+     "bbht_quantum_calls": {
+      "mean": 2.86,
+      "median": 2.0,
+      "p95": 8.049999999999983,
+      "max": 11.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 1.9404761904761905,
+     "grover_ideal_known_M": 1.0945188775832326,
+     "bbht_cheaper_than_random": false
+    },
+    {
+     "tau": 0.1,
+     "M": 583,
+     "M_over_N": 0.5114035087719299,
+     "bbht_quantum_calls": {
+      "mean": 2.855,
+      "median": 2.0,
+      "p95": 8.0,
+      "max": 11.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 1.9537671232876712,
+     "grover_ideal_known_M": 1.0982672408754308,
+     "bbht_cheaper_than_random": false
+    },
+    {
+     "tau": 0.108108108108108,
+     "M": 580,
+     "M_over_N": 0.5087719298245614,
+     "bbht_quantum_calls": {
+      "mean": 2.85,
+      "median": 2.0,
+      "p95": 8.0,
+      "max": 11.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 1.963855421686747,
+     "grover_ideal_known_M": 1.101103923794612,
+     "bbht_cheaper_than_random": false
+    },
+    {
+     "tau": 0.1467181467181467,
+     "M": 477,
+     "M_over_N": 0.41842105263157897,
+     "bbht_quantum_calls": {
+      "mean": 2.755,
+      "median": 3.0,
+      "p95": 6.0,
+      "max": 17.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 2.3870292887029287,
+     "grover_ideal_known_M": 1.2141801191742265,
+     "bbht_cheaper_than_random": false
+    },
+    {
+     "tau": 0.1747747747747747,
+     "M": 453,
+     "M_over_N": 0.3973684210526316,
+     "bbht_quantum_calls": {
+      "mean": 2.72,
+      "median": 3.0,
+      "p95": 5.0,
+      "max": 17.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 2.513215859030837,
+     "grover_ideal_known_M": 1.245928746184424,
+     "bbht_cheaper_than_random": false
+    },
+    {
+     "tau": 0.2,
+     "M": 450,
+     "M_over_N": 0.39473684210526316,
+     "bbht_quantum_calls": {
+      "mean": 2.72,
+      "median": 3.0,
+      "p95": 5.0,
+      "max": 17.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 2.529933481152993,
+     "grover_ideal_known_M": 1.2500749431557354,
+     "bbht_cheaper_than_random": false
+    },
+    {
+     "tau": 0.2204633204633205,
+     "M": 403,
+     "M_over_N": 0.35350877192982455,
+     "bbht_quantum_calls": {
+      "mean": 2.725,
+      "median": 3.0,
+      "p95": 5.0,
+      "max": 12.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 2.8242574257425743,
+     "grover_ideal_known_M": 1.3209603559453242,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.28185328185328173,
+     "M": 305,
+     "M_over_N": 0.2675438596491228,
+     "bbht_quantum_calls": {
+      "mean": 2.8,
+      "median": 3.0,
+      "p95": 5.0,
+      "max": 12.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 3.7287581699346406,
+     "grover_ideal_known_M": 1.5184216498759027,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.3,
+     "M": 241,
+     "M_over_N": 0.21140350877192982,
+     "bbht_quantum_calls": {
+      "mean": 2.985,
+      "median": 3.0,
+      "p95": 5.0,
+      "max": 10.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 4.714876033057851,
+     "grover_ideal_known_M": 1.708180602044681,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.38742950742950727,
+     "M": 225,
+     "M_over_N": 0.19736842105263158,
+     "bbht_quantum_calls": {
+      "mean": 3.025,
+      "median": 3.0,
+      "p95": 5.049999999999983,
+      "max": 10.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 5.048672566371682,
+     "grover_ideal_known_M": 1.767872938593617,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.41695331695331694,
+     "M": 218,
+     "M_over_N": 0.1912280701754386,
+     "bbht_quantum_calls": {
+      "mean": 3.065,
+      "median": 3.0,
+      "p95": 6.0,
+      "max": 10.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 5.210045662100456,
+     "grover_ideal_known_M": 1.79603195857635,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.44984416501483493,
+     "M": 181,
+     "M_over_N": 0.1587719298245614,
+     "bbht_quantum_calls": {
+      "mean": 3.35,
+      "median": 3.0,
+      "p95": 7.0,
+      "max": 13.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 6.269230769230769,
+     "grover_ideal_known_M": 1.9710744098481172,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.4665894742000935,
+     "M": 160,
+     "M_over_N": 0.14035087719298245,
+     "bbht_quantum_calls": {
+      "mean": 3.4,
+      "median": 3.0,
+      "p95": 7.0,
+      "max": 10.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 7.086956521739131,
+     "grover_ideal_known_M": 2.0964394123990573,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.4752454007721999,
+     "M": 80,
+     "M_over_N": 0.07017543859649122,
+     "bbht_quantum_calls": {
+      "mean": 5.45,
+      "median": 4.0,
+      "p95": 10.0,
+      "max": 61.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 14.08641975308642,
+     "grover_ideal_known_M": 2.964813049708229,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.49262899262899257,
+     "M": 74,
+     "M_over_N": 0.06491228070175438,
+     "bbht_quantum_calls": {
+      "mean": 6.095,
+      "median": 5.0,
+      "p95": 11.0,
+      "max": 88.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 15.213333333333333,
+     "grover_ideal_known_M": 3.0826658206590745,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.5,
+     "M": 18,
+     "M_over_N": 0.015789473684210527,
+     "bbht_quantum_calls": {
+      "mean": 12.96,
+      "median": 11.0,
+      "p95": 27.0,
+      "max": 33.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 60.05263157894737,
+     "grover_ideal_known_M": 6.250374715778677,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.507072920430854,
+     "M": 16,
+     "M_over_N": 0.014035087719298246,
+     "bbht_quantum_calls": {
+      "mean": 13.985,
+      "median": 12.5,
+      "p95": 28.049999999999983,
+      "max": 75.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 67.11764705882354,
+     "grover_ideal_known_M": 6.629523519726064,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.5320830887202569,
+     "M": 3,
+     "M_over_N": 0.002631578947368421,
+     "bbht_quantum_calls": {
+      "mean": 31.4,
+      "median": 29.0,
+      "p95": 60.0,
+      "max": 143.0,
+      "min": 3.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 285.25,
+     "grover_ideal_known_M": 15.31022875485119,
+     "bbht_cheaper_than_random": true
+    }
+   ],
+   "smallest_M_over_N_where_random_wins": 0.39473684210526316,
+   "largest_M_over_N_where_bbht_cheaper": 0.35350877192982455
+  },
+  "ieee30_k3": {
+   "N": 10660,
+   "rows": [
+    {
+     "tau": 0.011627906976744096,
+     "M": 5802,
+     "M_over_N": 0.5442776735459662,
+     "bbht_quantum_calls": {
+      "mean": 3.005,
+      "median": 2.0,
+      "p95": 9.0,
+      "max": 27.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 1.8371531966224366,
+     "grover_ideal_known_M": 1.0645832321414823,
+     "bbht_cheaper_than_random": false
+    },
+    {
+     "tau": 0.05,
+     "M": 4993,
+     "M_over_N": 0.4683864915572233,
+     "bbht_quantum_calls": {
+      "mean": 2.845,
+      "median": 3.0,
+      "p95": 7.0,
+      "max": 18.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 2.1347617140568684,
+     "grover_ideal_known_M": 1.1475924984089618,
+     "bbht_cheaper_than_random": false
+    },
+    {
+     "tau": 0.1,
+     "M": 4664,
+     "M_over_N": 0.4375234521575985,
+     "bbht_quantum_calls": {
+      "mean": 2.75,
+      "median": 3.0,
+      "p95": 6.0,
+      "max": 12.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 2.285316184351554,
+     "grover_ideal_known_M": 1.18737858747619,
+     "bbht_cheaper_than_random": false
+    },
+    {
+     "tau": 0.1405919661733614,
+     "M": 4603,
+     "M_over_N": 0.4318011257035647,
+     "bbht_quantum_calls": {
+      "mean": 2.755,
+      "median": 3.0,
+      "p95": 6.0,
+      "max": 12.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 2.315595134665508,
+     "grover_ideal_known_M": 1.1952203977971607,
+     "bbht_cheaper_than_random": false
+    },
+    {
+     "tau": 0.2,
+     "M": 4333,
+     "M_over_N": 0.40647279549718573,
+     "bbht_quantum_calls": {
+      "mean": 2.745,
+      "median": 3.0,
+      "p95": 6.0,
+      "max": 17.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 2.459852330410706,
+     "grover_ideal_known_M": 1.231896267020578,
+     "bbht_cheaper_than_random": false
+    },
+    {
+     "tau": 0.23255813953488358,
+     "M": 4266,
+     "M_over_N": 0.400187617260788,
+     "bbht_quantum_calls": {
+      "mean": 2.71,
+      "median": 3.0,
+      "p95": 5.0,
+      "max": 17.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 2.498476681509257,
+     "grover_ideal_known_M": 1.241532401223507,
+     "bbht_cheaper_than_random": false
+    },
+    {
+     "tau": 0.29334038054968287,
+     "M": 3543,
+     "M_over_N": 0.3323639774859287,
+     "bbht_quantum_calls": {
+      "mean": 2.71,
+      "median": 3.0,
+      "p95": 5.0,
+      "max": 12.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 3.0081828442437923,
+     "grover_ideal_known_M": 1.3623318419097343,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.3,
+     "M": 3450,
+     "M_over_N": 0.3236397748592871,
+     "bbht_quantum_calls": {
+      "mean": 2.725,
+      "median": 3.0,
+      "p95": 5.0,
+      "max": 12.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 3.0892494929006085,
+     "grover_ideal_known_M": 1.3805716031303095,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.3390983751080344,
+     "M": 2957,
+     "M_over_N": 0.2773921200750469,
+     "bbht_quantum_calls": {
+      "mean": 2.765,
+      "median": 3.0,
+      "p95": 5.0,
+      "max": 12.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 3.604124408384043,
+     "grover_ideal_known_M": 1.491223782911968,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.38054379929946214,
+     "M": 2514,
+     "M_over_N": 0.23583489681050657,
+     "bbht_quantum_calls": {
+      "mean": 2.915,
+      "median": 3.0,
+      "p95": 5.0,
+      "max": 12.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 4.2389662027833,
+     "grover_ideal_known_M": 1.617282350292347,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.42515788224809314,
+     "M": 2013,
+     "M_over_N": 0.18883677298311444,
+     "bbht_quantum_calls": {
+      "mean": 3.065,
+      "median": 3.0,
+      "p95": 6.0,
+      "max": 10.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 5.293445878848064,
+     "grover_ideal_known_M": 1.8073680315044895,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.4729034531360113,
+     "M": 1739,
+     "M_over_N": 0.16313320825515948,
+     "bbht_quantum_calls": {
+      "mean": 3.32,
+      "median": 3.0,
+      "p95": 7.0,
+      "max": 13.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 6.127011494252874,
+     "grover_ideal_known_M": 1.9445481110225924,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.5,
+     "M": 1641,
+     "M_over_N": 0.15393996247654784,
+     "bbht_quantum_calls": {
+      "mean": 3.35,
+      "median": 3.0,
+      "p95": 7.0,
+      "max": 13.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 6.492691839220463,
+     "grover_ideal_known_M": 2.001770077800871,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.5205000765276189,
+     "M": 1591,
+     "M_over_N": 0.14924953095684804,
+     "bbht_quantum_calls": {
+      "mean": 3.385,
+      "median": 3.0,
+      "p95": 7.0,
+      "max": 13.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 6.696608040201005,
+     "grover_ideal_known_M": 2.032981346851775,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.5598255322160969,
+     "M": 1307,
+     "M_over_N": 0.12260787992495309,
+     "bbht_quantum_calls": {
+      "mean": 3.69,
+      "median": 3.0,
+      "p95": 8.0,
+      "max": 12.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 8.150611620795107,
+     "grover_ideal_known_M": 2.243007314971555,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.5981423499831314,
+     "M": 1102,
+     "M_over_N": 0.10337711069418387,
+     "bbht_quantum_calls": {
+      "mean": 4.145,
+      "median": 3.0,
+      "p95": 9.0,
+      "max": 13.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 9.665457842248413,
+     "grover_ideal_known_M": 2.4427424882882627,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.6236970895242413,
+     "M": 844,
+     "M_over_N": 0.07917448405253283,
+     "bbht_quantum_calls": {
+      "mean": 4.755,
+      "median": 4.0,
+      "p95": 9.0,
+      "max": 13.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 12.616568047337278,
+     "grover_ideal_known_M": 2.791240515681381,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.6507974139910141,
+     "M": 617,
+     "M_over_N": 0.057879924953095685,
+     "bbht_quantum_calls": {
+      "mean": 6.315,
+      "median": 5.0,
+      "p95": 12.0,
+      "max": 88.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 17.250809061488674,
+     "grover_ideal_known_M": 3.2645693713365467,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.6787012180654936,
+     "M": 399,
+     "M_over_N": 0.0374296435272045,
+     "bbht_quantum_calls": {
+      "mean": 7.65,
+      "median": 7.0,
+      "p95": 17.0,
+      "max": 28.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 26.6525,
+     "grover_ideal_known_M": 4.059588708449279,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.737378372444609,
+     "M": 200,
+     "M_over_N": 0.01876172607879925,
+     "bbht_quantum_calls": {
+      "mean": 12.035,
+      "median": 10.0,
+      "p95": 25.0,
+      "max": 33.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 53.039800995024876,
+     "grover_ideal_known_M": 5.733944511514645,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.8477067613652838,
+     "M": 1,
+     "M_over_N": 9.380863039399625e-05,
+     "bbht_quantum_calls": {
+      "mean": 157.585,
+      "median": 154.0,
+      "p95": 296.15,
+      "max": 403.0,
+      "min": 5.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 5330.5,
+     "grover_ideal_known_M": 81.09022094078783,
+     "bbht_cheaper_than_random": true
+    }
+   ],
+   "smallest_M_over_N_where_random_wins": 0.400187617260788,
+   "largest_M_over_N_where_bbht_cheaper": 0.3323639774859287
+  },
+  "ieee118_k3": {
+   "N": 1055240,
+   "rows": [
+    {
+     "tau": 0.00047147571900041374,
+     "M": 219147,
+     "M_over_N": 0.20767503127250672,
+     "bbht_quantum_calls": {
+      "mean": 2.985,
+      "median": 3.0,
+      "p95": 5.0,
+      "max": 10.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 4.815197948418421,
+     "grover_ideal_known_M": 1.7234462329665328,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.040318317546040316,
+     "M": 156588,
+     "M_over_N": 0.1483908873810697,
+     "bbht_quantum_calls": {
+      "mean": 3.385,
+      "median": 3.0,
+      "p95": 7.0,
+      "max": 13.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 6.73892163561936,
+     "grover_ideal_known_M": 2.0388546471105116,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.05,
+     "M": 147440,
+     "M_over_N": 0.1397217694552898,
+     "bbht_quantum_calls": {
+      "mean": 3.4,
+      "median": 3.0,
+      "p95": 7.0,
+      "max": 10.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 7.157039086821169,
+     "grover_ideal_known_M": 2.101153799419439,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.05781292414955759,
+     "M": 137229,
+     "M_over_N": 0.13004529775217014,
+     "bbht_quantum_calls": {
+      "mean": 3.515,
+      "median": 3.0,
+      "p95": 8.0,
+      "max": 10.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 7.689579538001895,
+     "grover_ideal_known_M": 2.1779231674058197,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.0709785264240711,
+     "M": 117772,
+     "M_over_N": 0.1116068382548046,
+     "bbht_quantum_calls": {
+      "mean": 4.02,
+      "median": 3.0,
+      "p95": 9.0,
+      "max": 12.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 8.95995686617476,
+     "grover_ideal_known_M": 2.350955879867817,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.08182246796108157,
+     "M": 105523,
+     "M_over_N": 0.09999905234828096,
+     "bbht_quantum_calls": {
+      "mean": 4.26,
+      "median": 3.0,
+      "p95": 9.0,
+      "max": 13.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 10.00000947651719,
+     "grover_ideal_known_M": 2.483658834694727,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.09070711779578161,
+     "M": 94779,
+     "M_over_N": 0.08981748227891286,
+     "bbht_quantum_calls": {
+      "mean": 4.51,
+      "median": 4.0,
+      "p95": 9.0,
+      "max": 13.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 11.133583034395443,
+     "grover_ideal_known_M": 2.620652535089371,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.09911705456259912,
+     "M": 82504,
+     "M_over_N": 0.07818505742769417,
+     "bbht_quantum_calls": {
+      "mean": 4.765,
+      "median": 4.0,
+      "p95": 9.0,
+      "max": 13.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 12.790024846978971,
+     "grover_ideal_known_M": 2.808846470423495,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.1,
+     "M": 81035,
+     "M_over_N": 0.07679295705242409,
+     "bbht_quantum_calls": {
+      "mean": 4.885,
+      "median": 4.0,
+      "p95": 10.0,
+      "max": 13.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 13.021879164815637,
+     "grover_ideal_known_M": 2.834191464425585,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.10686977788687964,
+     "M": 69670,
+     "M_over_N": 0.06602289526553201,
+     "bbht_quantum_calls": {
+      "mean": 5.69,
+      "median": 5.0,
+      "p95": 11.0,
+      "max": 61.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 15.14605790070474,
+     "grover_ideal_known_M": 3.0566280817002363,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.11469718400411459,
+     "M": 56224,
+     "M_over_N": 0.053280770251317236,
+     "bbht_quantum_calls": {
+      "mean": 6.56,
+      "median": 6.0,
+      "p95": 13.0,
+      "max": 88.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 18.76818141396176,
+     "grover_ideal_known_M": 3.4025509265473746,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.12269084051262258,
+     "M": 44569,
+     "M_over_N": 0.04223588946590349,
+     "bbht_quantum_calls": {
+      "mean": 7.28,
+      "median": 7.0,
+      "p95": 14.049999999999983,
+      "max": 35.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 23.676037693515816,
+     "grover_ideal_known_M": 3.8216337092821093,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.12991753720826632,
+     "M": 35259,
+     "M_over_N": 0.03341325196163906,
+     "bbht_quantum_calls": {
+      "mean": 8.395,
+      "median": 8.0,
+      "p95": 18.0,
+      "max": 28.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 29.92742484401588,
+     "grover_ideal_known_M": 4.29665524885849,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.13759834605130816,
+     "M": 22225,
+     "M_over_N": 0.021061559455668854,
+     "bbht_quantum_calls": {
+      "mean": 11.155,
+      "median": 9.5,
+      "p95": 23.0,
+      "max": 33.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 47.47777377845766,
+     "grover_ideal_known_M": 5.411835898828935,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.1463932107496464,
+     "M": 14230,
+     "M_over_N": 0.013485083961942307,
+     "bbht_quantum_calls": {
+      "mean": 14.74,
+      "median": 13.0,
+      "p95": 29.049999999999983,
+      "max": 75.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 74.15086782376503,
+     "grover_ideal_known_M": 6.763368554187947,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.15657280013715638,
+     "M": 7810,
+     "M_over_N": 0.007401159925704105,
+     "bbht_quantum_calls": {
+      "mean": 19.655,
+      "median": 18.5,
+      "p95": 35.099999999999966,
+      "max": 50.0,
+      "min": 1.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 135.09678658302394,
+     "grover_ideal_known_M": 9.129352726871275,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.16962150760530606,
+     "M": 3041,
+     "M_over_N": 0.002881808877601304,
+     "bbht_quantum_calls": {
+      "mean": 30.34,
+      "median": 28.0,
+      "p95": 59.04999999999998,
+      "max": 101.0,
+      "min": 3.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 346.8905325443787,
+     "grover_ideal_known_M": 14.6304368502027,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.2,
+     "M": 122,
+     "M_over_N": 0.00011561350972290664,
+     "bbht_quantum_calls": {
+      "mean": 143.25,
+      "median": 143.0,
+      "p95": 252.19999999999993,
+      "max": 426.0,
+      "min": 5.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 8579.19512195122,
+     "grover_ideal_known_M": 73.04417506106284,
+     "bbht_cheaper_than_random": true
+    },
+    {
+     "tau": 0.22804423299472798,
+     "M": 2,
+     "M_over_N": 1.8953034380804366e-06,
+     "bbht_quantum_calls": {
+      "mean": 1106.22,
+      "median": 1088.5,
+      "p95": 2117.85,
+      "max": 2765.0,
+      "min": 135.0,
+      "n": 200
+     },
+     "bbht_success_rate": 1.0,
+     "random_expected_unique_evals_analytic": 351747.0,
+     "grover_ideal_known_M": 570.4932445975351,
+     "bbht_cheaper_than_random": true
+    }
+   ],
+   "smallest_M_over_N_where_random_wins": null,
+   "largest_M_over_N_where_bbht_cheaper": 0.20767503127250672
+  }
+ },
+ "timing": {},
+ "parts": [
+  {
+   "name": "threshold_map[ieee14,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "EMULATED",
+   "reason": "",
+   "dataset": "ieee14"
+  },
+  {
+   "name": "threshold_map[ieee30,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "EMULATED",
+   "reason": "",
+   "dataset": "ieee30"
+  },
+  {
+   "name": "threshold_map[ieee118,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "EMULATED",
+   "reason": "",
+   "dataset": "ieee118"
+  }
+ ]
+}

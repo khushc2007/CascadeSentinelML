@@ -1,0 +1,12 @@
+.........ss............................................................. [ 37%]
+........................................................................ [ 75%]
+................................................                         [100%]
+=========================== short test summary info ============================
+SKIPPED [1] tests/helpers.py:60: official MATPOWER case30.m not present in /home/claude/handoff/gdf/doomsday/gridtwin/data (not obtainable in the offline build sandbox)
+SKIPPED [1] tests/helpers.py:60: official MATPOWER case118.m not present in /home/claude/handoff/gdf/doomsday/gridtwin/data (not obtainable in the offline build sandbox)
+190 passed, 2 skipped in 193.32s (0:03:13)
+
+real	3m14.054s
+user	3m8.817s
+sys	0m0.894s
+pytest exit=0

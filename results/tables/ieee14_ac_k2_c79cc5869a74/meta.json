@@ -1,0 +1,61 @@
+{
+ "namespace": "c79cc5869a740f21c618af96404a4e2b914b8908ca9b045137447d73c85cf7e9",
+ "fidelity": "ac",
+ "L": 20,
+ "k": 2,
+ "N": 190,
+ "chunk": 20000,
+ "full_records": true,
+ "grid_name": "ieee14",
+ "completed_chunks": 1,
+ "complete": true,
+ "order": "lexicographic",
+ "tie_band": 1e-09,
+ "code_version": "9f96b268c8dd36680fd6a050da1640935455f27d5c9dbbc05feb34befc9fa9d2",
+ "oracle_config": {
+  "rating": {
+   "family": "n1_covering",
+   "headroom_h": 0.25,
+   "floor_frac": 0.05,
+   "n1_margin_m": 0.05
+  },
+  "stress_lambda": 1.1,
+  "cascade": {
+   "trip_factor": 1.0,
+   "trip_policy": "all_overloaded",
+   "max_rounds": 30,
+   "mode_default": "dc",
+   "ladder_step": 0.05,
+   "redispatch": "up_and_down"
+  },
+  "numerics": {
+   "ac_tol_pu": 1e-08,
+   "ac_max_iter": 30,
+   "overload_tol": 1e-09,
+   "tie_band": 1e-09,
+   "voltage_band": [
+    0.9,
+    1.1
+   ],
+   "float_dtype": "float64"
+  },
+  "fidelity": "ac",
+  "fast_path": false
+ },
+ "software": {
+  "doomsday": "0.1.0",
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1"
+ },
+ "sha256": {
+  "S": "0197dac13d2bede58131567977ab6ee47e8c0f61f282631d9d38768223ff4f89",
+  "S0": "a34803ce49c7844499fc53e64e410719a4e75a09fcea0547df7d48341dd26fb2",
+  "S_total": "525950068f4baea1010ca9cf24181069129381c253d7db89e0b1ea63d97beb47",
+  "rounds": "0f56fa17580aae781bca03bf9293972e738703295b4795aeb6a02e2431c7c92e",
+  "status": "a5013b2e4eba88755d0d7077c26701a744bab8caedeb0cf1bd3eaf82a6a7802a",
+  "flags": "40f0227300149d9f3c8b65e5cece7b1b4c3cfed63cf61e826598798d11482e53",
+  "ladder": "255dfc277d5d9b5e67879d4701ca989c83c9c465a4b200784f4ccbeca02586a2",
+  "n_trips": "5c8b4fb55ed79ee34e8c278f76a3d45995289e20796f802ec686ecdc357c1799"
+ }
+}

@@ -1,0 +1,604 @@
+{
+ "label": "[MEASURED] Phase 3 diagnostic (not E3/E11)",
+ "case": "ieee14",
+ "case_provenance": "transcribed_from_memory_UNVERIFIED",
+ "code_version": "4aaaff30e4172ed425720e90fcbbb473ae36fb71799180fff83b47fbdebd5801",
+ "software": {
+  "doomsday": "0.1.0",
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1"
+ },
+ "primary_metric": "tie-expanded top-T Jaccard (S >= s_T - 1e-9); deterministic overlap is secondary",
+ "tables": {
+  "k2_dc: m=0.05 vs m=0.1": {
+   "N": 190,
+   "spearman": 0.8868700996756754,
+   "top10": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.46907686907686896,
+     0.41695331695331683
+    ],
+    "tie_expanded_size": [
+     18,
+     16
+    ],
+    "tie_expanded_jaccard": 0.6190476190476191,
+    "distinct_levels_in_region": [
+     5,
+     3
+    ],
+    "deterministic_overlap_secondary": 0.6,
+    "deterministic_jaccard_secondary": 0.42857142857142855
+   },
+   "top100": {
+    "feasible": true,
+    "informative": false,
+    "s_T": [
+     0.0,
+     0.0
+    ],
+    "tie_expanded_size": [
+     190,
+     190
+    ],
+    "tie_expanded_jaccard": 1.0,
+    "distinct_levels_in_region": [
+     22,
+     18
+    ],
+    "deterministic_overlap_secondary": 0.95,
+    "deterministic_jaccard_secondary": 0.9047619047619048
+   }
+  },
+  "k2_dc: m=0.05 vs m=0.2": {
+   "N": 190,
+   "spearman": 0.679279528446186,
+   "top10": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.46907686907686896,
+     0.29536679536679533
+    ],
+    "tie_expanded_size": [
+     18,
+     10
+    ],
+    "tie_expanded_jaccard": 0.3333333333333333,
+    "distinct_levels_in_region": [
+     5,
+     4
+    ],
+    "deterministic_overlap_secondary": 0.3,
+    "deterministic_jaccard_secondary": 0.17647058823529413
+   },
+   "top100": {
+    "feasible": true,
+    "informative": false,
+    "s_T": [
+     0.0,
+     0.0
+    ],
+    "tie_expanded_size": [
+     190,
+     190
+    ],
+    "tie_expanded_jaccard": 1.0,
+    "distinct_levels_in_region": [
+     22,
+     15
+    ],
+    "deterministic_overlap_secondary": 0.81,
+    "deterministic_jaccard_secondary": 0.680672268907563
+   }
+  },
+  "k2_ac: m=0.05 vs m=0.1": {
+   "N": 190,
+   "spearman": 0.9092511750148599,
+   "top10": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.47272507088005244,
+     0.41695331695331683
+    ],
+    "tie_expanded_size": [
+     10,
+     10
+    ],
+    "tie_expanded_jaccard": 0.5384615384615384,
+    "distinct_levels_in_region": [
+     4,
+     7
+    ],
+    "deterministic_overlap_secondary": 0.7,
+    "deterministic_jaccard_secondary": 0.5384615384615384
+   },
+   "top100": {
+    "feasible": true,
+    "informative": false,
+    "s_T": [
+     0.0,
+     0.0
+    ],
+    "tie_expanded_size": [
+     190,
+     190
+    ],
+    "tie_expanded_jaccard": 1.0,
+    "distinct_levels_in_region": [
+     28,
+     30
+    ],
+    "deterministic_overlap_secondary": 0.96,
+    "deterministic_jaccard_secondary": 0.9230769230769231
+   }
+  },
+  "k2_ac: m=0.05 vs m=0.2": {
+   "N": 190,
+   "spearman": 0.7052533006943725,
+   "top10": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.47272507088005244,
+     0.25870656370656375
+    ],
+    "tie_expanded_size": [
+     10,
+     10
+    ],
+    "tie_expanded_jaccard": 0.42857142857142855,
+    "distinct_levels_in_region": [
+     4,
+     8
+    ],
+    "deterministic_overlap_secondary": 0.6,
+    "deterministic_jaccard_secondary": 0.42857142857142855
+   },
+   "top100": {
+    "feasible": true,
+    "informative": false,
+    "s_T": [
+     0.0,
+     0.0
+    ],
+    "tie_expanded_size": [
+     190,
+     190
+    ],
+    "tie_expanded_jaccard": 1.0,
+    "distinct_levels_in_region": [
+     28,
+     22
+    ],
+    "deterministic_overlap_secondary": 0.83,
+    "deterministic_jaccard_secondary": 0.7094017094017094
+   }
+  },
+  "k2_m0.05: DC vs AC": {
+   "N": 190,
+   "spearman": 0.8613720167581641,
+   "top10": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.46907686907686896,
+     0.47272507088005244
+    ],
+    "tie_expanded_size": [
+     18,
+     10
+    ],
+    "tie_expanded_jaccard": 0.47368421052631576,
+    "distinct_levels_in_region": [
+     5,
+     4
+    ],
+    "deterministic_overlap_secondary": 0.3,
+    "deterministic_jaccard_secondary": 0.17647058823529413
+   },
+   "top100": {
+    "feasible": true,
+    "informative": false,
+    "s_T": [
+     0.0,
+     0.0
+    ],
+    "tie_expanded_size": [
+     190,
+     190
+    ],
+    "tie_expanded_jaccard": 1.0,
+    "distinct_levels_in_region": [
+     22,
+     28
+    ],
+    "deterministic_overlap_secondary": 0.97,
+    "deterministic_jaccard_secondary": 0.941747572815534
+   }
+  },
+  "k2_m0.1: DC vs AC": {
+   "N": 190,
+   "spearman": 0.9057613895558849,
+   "top10": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.41695331695331683,
+     0.41695331695331683
+    ],
+    "tie_expanded_size": [
+     16,
+     10
+    ],
+    "tie_expanded_jaccard": 0.625,
+    "distinct_levels_in_region": [
+     3,
+     7
+    ],
+    "deterministic_overlap_secondary": 0.5,
+    "deterministic_jaccard_secondary": 0.3333333333333333
+   },
+   "top100": {
+    "feasible": true,
+    "informative": false,
+    "s_T": [
+     0.0,
+     0.0
+    ],
+    "tie_expanded_size": [
+     190,
+     190
+    ],
+    "tie_expanded_jaccard": 1.0,
+    "distinct_levels_in_region": [
+     18,
+     30
+    ],
+    "deterministic_overlap_secondary": 0.96,
+    "deterministic_jaccard_secondary": 0.9230769230769231
+   }
+  },
+  "k2_m0.2: DC vs AC": {
+   "N": 190,
+   "spearman": 0.8907446430108618,
+   "top10": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.29536679536679533,
+     0.25870656370656375
+    ],
+    "tie_expanded_size": [
+     10,
+     10
+    ],
+    "tie_expanded_jaccard": 0.6666666666666666,
+    "distinct_levels_in_region": [
+     4,
+     8
+    ],
+    "deterministic_overlap_secondary": 0.8,
+    "deterministic_jaccard_secondary": 0.6666666666666666
+   },
+   "top100": {
+    "feasible": true,
+    "informative": false,
+    "s_T": [
+     0.0,
+     0.0
+    ],
+    "tie_expanded_size": [
+     190,
+     190
+    ],
+    "tie_expanded_jaccard": 1.0,
+    "distinct_levels_in_region": [
+     15,
+     22
+    ],
+    "deterministic_overlap_secondary": 0.97,
+    "deterministic_jaccard_secondary": 0.941747572815534
+   }
+  },
+  "k3_dc: m=0.05 vs m=0.1": {
+   "N": 1140,
+   "spearman": 0.8885339793204226,
+   "top10": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.5219726219726218,
+     0.5140375586646129
+    ],
+    "tie_expanded_size": [
+     12,
+     10
+    ],
+    "tie_expanded_jaccard": 0.375,
+    "distinct_levels_in_region": [
+     3,
+     4
+    ],
+    "deterministic_overlap_secondary": 0.6,
+    "deterministic_jaccard_secondary": 0.42857142857142855
+   },
+   "top100": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.4690768690768691,
+     0.4637467371980647
+    ],
+    "tie_expanded_size": [
+     160,
+     102
+    ],
+    "tie_expanded_jaccard": 0.5502958579881657,
+    "distinct_levels_in_region": [
+     16,
+     16
+    ],
+    "deterministic_overlap_secondary": 0.75,
+    "deterministic_jaccard_secondary": 0.6
+   }
+  },
+  "k3_dc: m=0.05 vs m=0.2": {
+   "N": 1140,
+   "spearman": 0.6822291177164033,
+   "top10": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.5219726219726218,
+     0.4926289926289925
+    ],
+    "tie_expanded_size": [
+     12,
+     38
+    ],
+    "tie_expanded_jaccard": 0.21951219512195122,
+    "distinct_levels_in_region": [
+     3,
+     6
+    ],
+    "deterministic_overlap_secondary": 0.4,
+    "deterministic_jaccard_secondary": 0.25
+   },
+   "top100": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.4690768690768691,
+     0.41695331695331683
+    ],
+    "tie_expanded_size": [
+     160,
+     108
+    ],
+    "tie_expanded_jaccard": 0.4888888888888889,
+    "distinct_levels_in_region": [
+     16,
+     19
+    ],
+    "deterministic_overlap_secondary": 0.49,
+    "deterministic_jaccard_secondary": 0.32450331125827814
+   }
+  },
+  "k3_ac: m=0.05 vs m=0.1": {
+   "N": 1140,
+   "spearman": 0.8661636512897094,
+   "top10": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.5545753672875444,
+     0.5708301158301157
+    ],
+    "tie_expanded_size": [
+     11,
+     10
+    ],
+    "tie_expanded_jaccard": 0.3125,
+    "distinct_levels_in_region": [
+     9,
+     8
+    ],
+    "deterministic_overlap_secondary": 0.5,
+    "deterministic_jaccard_secondary": 0.3333333333333333
+   },
+   "top100": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.4902316602316602,
+     0.46191119691119686
+    ],
+    "tie_expanded_size": [
+     100,
+     102
+    ],
+    "tie_expanded_jaccard": 0.518796992481203,
+    "distinct_levels_in_region": [
+     42,
+     49
+    ],
+    "deterministic_overlap_secondary": 0.68,
+    "deterministic_jaccard_secondary": 0.5151515151515151
+   }
+  },
+  "k3_ac: m=0.05 vs m=0.2": {
+   "N": 1140,
+   "spearman": 0.6977840142339936,
+   "top10": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.5545753672875444,
+     0.569015444015444
+    ],
+    "tie_expanded_size": [
+     11,
+     10
+    ],
+    "tie_expanded_jaccard": 0.3125,
+    "distinct_levels_in_region": [
+     9,
+     8
+    ],
+    "deterministic_overlap_secondary": 0.5,
+    "deterministic_jaccard_secondary": 0.3333333333333333
+   },
+   "top100": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.4902316602316602,
+     0.41695331695331683
+    ],
+    "tie_expanded_size": [
+     100,
+     112
+    ],
+    "tie_expanded_jaccard": 0.46206896551724136,
+    "distinct_levels_in_region": [
+     42,
+     61
+    ],
+    "deterministic_overlap_secondary": 0.59,
+    "deterministic_jaccard_secondary": 0.41843971631205673
+   }
+  },
+  "k3_m0.05: DC vs AC": {
+   "N": 1140,
+   "spearman": 0.8237201452148383,
+   "top10": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.5219726219726218,
+     0.5545753672875444
+    ],
+    "tie_expanded_size": [
+     12,
+     11
+    ],
+    "tie_expanded_jaccard": 0.15,
+    "distinct_levels_in_region": [
+     3,
+     9
+    ],
+    "deterministic_overlap_secondary": 0.2,
+    "deterministic_jaccard_secondary": 0.1111111111111111
+   },
+   "top100": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.4690768690768691,
+     0.4902316602316602
+    ],
+    "tie_expanded_size": [
+     160,
+     100
+    ],
+    "tie_expanded_jaccard": 0.4207650273224044,
+    "distinct_levels_in_region": [
+     16,
+     42
+    ],
+    "deterministic_overlap_secondary": 0.46,
+    "deterministic_jaccard_secondary": 0.2987012987012987
+   }
+  },
+  "k3_m0.1: DC vs AC": {
+   "N": 1140,
+   "spearman": 0.863570071748457,
+   "top10": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.5140375586646129,
+     0.5708301158301157
+    ],
+    "tie_expanded_size": [
+     10,
+     10
+    ],
+    "tie_expanded_jaccard": 0.0,
+    "distinct_levels_in_region": [
+     4,
+     8
+    ],
+    "deterministic_overlap_secondary": 0.0,
+    "deterministic_jaccard_secondary": 0.0
+   },
+   "top100": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.4637467371980647,
+     0.46191119691119686
+    ],
+    "tie_expanded_size": [
+     102,
+     102
+    ],
+    "tie_expanded_jaccard": 0.4166666666666667,
+    "distinct_levels_in_region": [
+     16,
+     49
+    ],
+    "deterministic_overlap_secondary": 0.58,
+    "deterministic_jaccard_secondary": 0.4084507042253521
+   }
+  },
+  "k3_m0.2: DC vs AC": {
+   "N": 1140,
+   "spearman": 0.8497327400828356,
+   "top10": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.4926289926289925,
+     0.569015444015444
+    ],
+    "tie_expanded_size": [
+     38,
+     10
+    ],
+    "tie_expanded_jaccard": 0.09090909090909091,
+    "distinct_levels_in_region": [
+     6,
+     8
+    ],
+    "deterministic_overlap_secondary": 0.0,
+    "deterministic_jaccard_secondary": 0.0
+   },
+   "top100": {
+    "feasible": true,
+    "informative": true,
+    "s_T": [
+     0.41695331695331683,
+     0.41695331695331683
+    ],
+    "tie_expanded_size": [
+     108,
+     112
+    ],
+    "tie_expanded_jaccard": 0.6296296296296297,
+    "distinct_levels_in_region": [
+     19,
+     61
+    ],
+    "deterministic_overlap_secondary": 0.69,
+    "deterministic_jaccard_secondary": 0.5267175572519084
+   }
+  }
+ },
+ "seconds_total_informal": 47.60568895099999
+}

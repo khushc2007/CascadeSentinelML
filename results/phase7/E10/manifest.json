@@ -1,0 +1,147 @@
+{
+ "experiment_id": "E10",
+ "name": "QAOA surrogate comparison (a, b, c)",
+ "v2_section": "14; 18 E10",
+ "priority": "S",
+ "status": "EXECUTED",
+ "data_status": "OFFICIAL_DATA",
+ "evidence_label": "[EXECUTED] [SIMULATED] NumPy statevector simulation (not Aer, not hardware); [SIMULATED] Qiskit Aer simulation (classical simulator of an ideal or noise-modelled device; not hardware)",
+ "parts": [
+  {
+   "name": "E10a_planted_quadratic",
+   "status": "EXECUTED",
+   "data_status": "NO_GRID_DATA",
+   "kind": "NUMPY_STATEVECTOR",
+   "dataset": null,
+   "reason": "",
+   "label": "[SIMULATED] NumPy statevector simulation (not Aer, not hardware)"
+  },
+  {
+   "name": "E10b_k2_exact_surrogate",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "NUMPY_STATEVECTOR",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[SIMULATED] NumPy statevector simulation (not Aer, not hardware)"
+  },
+  {
+   "name": "E10c_k3_surrogate_gap",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "NUMPY_STATEVECTOR",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[SIMULATED] NumPy statevector simulation (not Aer, not hardware)"
+  },
+  {
+   "name": "E10_aer_crosscheck_L10",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "AER_SIMULATED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[SIMULATED] Qiskit Aer simulation (classical simulator of an ideal or noise-modelled device; not hardware)"
+  }
+ ],
+ "config": {
+  "file": "doomsday/experiments/specs.py",
+  "params": {},
+  "datasets": [
+   {
+    "name": "ieee14",
+    "role": "pre_registered"
+   }
+  ],
+  "config_hash": "bfe687f03252f2dc372c0ee6904da6fce66815e3758675bd08ba799d9b096fda",
+  "base_config_hash": "15ac98ee0c4a01f566b427789c247b0c9519ff736a6f65d83c76aec60810cc68"
+ },
+ "datasets": {
+  "ieee14": {
+   "name": "ieee14",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "2ffc4e1b734ae6c5e92dbe68b4e36010ed695a4bbcc4d065c74c4fbc39fcf3c1",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  }
+ },
+ "seeds": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "parameters_and_stopping_conditions": {
+  "grid": "ieee14",
+  "shots": 4096,
+  "p_max": 4,
+  "starts": 10,
+  "T_verify": 10,
+  "n_train": [
+   100,
+   200,
+   400,
+   800
+  ],
+  "ridge_k2": 1e-06,
+  "ridge_k3": 0.001,
+  "verify_rule": "top-T = the T distinct sampled strings with the highest SURROGATE value; each is evaluated with the true oracle (T calls)",
+  "aer_crosscheck": {
+   "candidates": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "k": 2,
+   "p": 2,
+   "tol": 1e-08
+  }
+ },
+ "accounting": {
+  "classical_function_evaluations": "true-oracle calls = n_train + T (V2 14.3 metric 4)",
+  "quantum_oracle_calls_emulated": null,
+  "classical_verification_calls": null,
+  "preprocessing_evaluations": null,
+  "estimated_quantum_runtime_s": null,
+  "notes": "QAOA objective evaluations are surrogate-only (no oracle calls)"
+ },
+ "limitations": [
+  "QAOA is simulated exactly in the weight-k subspace (NumPy); no noise, no hardware.",
+  "Every QAOA quantity refers to the SURROGATE objective; true-S quantities come from verifying sampled strings with the true oracle.",
+  "No proven speedup; included as a near-term hybrid comparison (V2 14)."
+ ],
+ "acceptance_criteria": [],
+ "implementation": {
+  "package_version": "0.1.0",
+  "source_sha256": "0859ee9c4e81d558920f1c5307078ea51f1485d45977a2f4b128a39b01a6c5bb"
+ },
+ "environment": {
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v153-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1",
+  "matplotlib": "3.11.2",
+  "doomsday": "0.1.0",
+  "threads_env": {
+   "OMP_NUM_THREADS": "1",
+   "OPENBLAS_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "cpu_count": 2
+ },
+ "runtime_s": 363.0770588610003,
+ "outputs": {
+  "results/phase7/E10/result.json": "a8e34e1eefc96bd5ea844627c2b7b746c3b882b952c51d887c95101c77c313d6"
+ },
+ "result_digest": "54bd1fccd84ad09fb298207695f6cf1eb0be92f04a48b5d74cd67aa89d8d10cd",
+ "generated_utc": "2026-10-23T10:52:51Z"
+}

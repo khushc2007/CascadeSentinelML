@@ -1,0 +1,1069 @@
+{
+ "experiment_id": "E14",
+ "payload": {
+  "instance": {
+   "buses": 4,
+   "branches": 5,
+   "bits": 6,
+   "frac_bits": 3,
+   "rounds": 2,
+   "tau": 0.2,
+   "ratings_int": [
+    13,
+    9,
+    8,
+    12,
+    10
+   ],
+   "loads_int": [
+    0,
+    8,
+    8,
+    4
+   ],
+   "threshold_served_int": 16,
+   "label_propagation_iterations": 3
+  },
+  "verification": {
+   "n_inputs": 64,
+   "flag_equals_classical_oracle": true,
+   "intermediate_flows_and_served_equal_classical": true,
+   "kickback_target_flips_iff_marked": true,
+   "ancillas_clean_after_uncompute": true,
+   "inputs_unchanged": true,
+   "inverse_restores_input": true,
+   "n_marked": 24,
+   "qubits": 444,
+   "peak_pool": 22
+  },
+  "verification_rows": [
+   {
+    "x": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "flag": 0,
+    "served_int": 20,
+    "S": 0.0
+   },
+   {
+    "x": [
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    "flag": 0,
+    "served_int": 20,
+    "S": 0.0
+   },
+   {
+    "x": [
+     0,
+     1,
+     0,
+     0,
+     0
+    ],
+    "flag": 0,
+    "served_int": 20,
+    "S": 0.0
+   },
+   {
+    "x": [
+     1,
+     1,
+     0,
+     0,
+     0
+    ],
+    "flag": 1,
+    "served_int": 12,
+    "S": 0.4
+   },
+   {
+    "x": [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "flag": 0,
+    "served_int": 20,
+    "S": 0.0
+   },
+   {
+    "x": [
+     1,
+     0,
+     1,
+     0,
+     0
+    ],
+    "flag": 1,
+    "served_int": 4,
+    "S": 0.8
+   },
+   {
+    "x": [
+     0,
+     1,
+     1,
+     0,
+     0
+    ],
+    "flag": 0,
+    "served_int": 20,
+    "S": 0.0
+   },
+   {
+    "x": [
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "flag": 1,
+    "served_int": 12,
+    "S": 0.4
+   },
+   {
+    "x": [
+     0,
+     0,
+     0,
+     1,
+     0
+    ],
+    "flag": 0,
+    "served_int": 20,
+    "S": 0.0
+   },
+   {
+    "x": [
+     1,
+     0,
+     0,
+     1,
+     0
+    ],
+    "flag": 1,
+    "served_int": 0,
+    "S": 1.0
+   },
+   {
+    "x": [
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    "flag": 1,
+    "served_int": 8,
+    "S": 0.6
+   },
+   {
+    "x": [
+     1,
+     1,
+     0,
+     1,
+     0
+    ],
+    "flag": 1,
+    "served_int": 0,
+    "S": 1.0
+   },
+   {
+    "x": [
+     0,
+     0,
+     1,
+     1,
+     0
+    ],
+    "flag": 1,
+    "served_int": 16,
+    "S": 0.19999999999999996
+   },
+   {
+    "x": [
+     1,
+     0,
+     1,
+     1,
+     0
+    ],
+    "flag": 1,
+    "served_int": 0,
+    "S": 1.0
+   },
+   {
+    "x": [
+     0,
+     1,
+     1,
+     1,
+     0
+    ],
+    "flag": 1,
+    "served_int": 16,
+    "S": 0.19999999999999996
+   },
+   {
+    "x": [
+     1,
+     1,
+     1,
+     1,
+     0
+    ],
+    "flag": 1,
+    "served_int": 8,
+    "S": 0.6
+   },
+   {
+    "x": [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "flag": 0,
+    "served_int": 20,
+    "S": 0.0
+   },
+   {
+    "x": [
+     1,
+     0,
+     0,
+     0,
+     1
+    ],
+    "flag": 1,
+    "served_int": 0,
+    "S": 1.0
+   },
+   {
+    "x": [
+     0,
+     1,
+     0,
+     0,
+     1
+    ],
+    "flag": 0,
+    "served_int": 20,
+    "S": 0.0
+   },
+   {
+    "x": [
+     1,
+     1,
+     0,
+     0,
+     1
+    ],
+    "flag": 1,
+    "served_int": 12,
+    "S": 0.4
+   },
+   {
+    "x": [
+     0,
+     0,
+     1,
+     0,
+     1
+    ],
+    "flag": 1,
+    "served_int": 4,
+    "S": 0.8
+   },
+   {
+    "x": [
+     1,
+     0,
+     1,
+     0,
+     1
+    ],
+    "flag": 1,
+    "served_int": 4,
+    "S": 0.8
+   },
+   {
+    "x": [
+     0,
+     1,
+     1,
+     0,
+     1
+    ],
+    "flag": 1,
+    "served_int": 12,
+    "S": 0.4
+   },
+   {
+    "x": [
+     1,
+     1,
+     1,
+     0,
+     1
+    ],
+    "flag": 1,
+    "served_int": 4,
+    "S": 0.8
+   },
+   {
+    "x": [
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "flag": 1,
+    "served_int": 0,
+    "S": 1.0
+   },
+   {
+    "x": [
+     1,
+     0,
+     0,
+     1,
+     1
+    ],
+    "flag": 1,
+    "served_int": 0,
+    "S": 1.0
+   },
+   {
+    "x": [
+     0,
+     1,
+     0,
+     1,
+     1
+    ],
+    "flag": 1,
+    "served_int": 8,
+    "S": 0.6
+   },
+   {
+    "x": [
+     1,
+     1,
+     0,
+     1,
+     1
+    ],
+    "flag": 1,
+    "served_int": 0,
+    "S": 1.0
+   },
+   {
+    "x": [
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "flag": 1,
+    "served_int": 0,
+    "S": 1.0
+   },
+   {
+    "x": [
+     1,
+     0,
+     1,
+     1,
+     1
+    ],
+    "flag": 1,
+    "served_int": 0,
+    "S": 1.0
+   },
+   {
+    "x": [
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    "flag": 1,
+    "served_int": 8,
+    "S": 0.6
+   },
+   {
+    "x": [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "flag": 1,
+    "served_int": 0,
+    "S": 1.0
+   }
+  ],
+  "all_checks_pass": true,
+  "qubits": 444,
+  "toffoli_equiv_total": 22108,
+  "gates_total": 40863,
+  "calibration": {
+   "island_detection": {
+    "synthesized_toffoli_equiv": 324,
+    "formula": 855.0,
+    "kappa_cal": 0.37894736842105264
+   },
+   "multiplier_flow_update": {
+    "synthesized_toffoli_equiv": 7920,
+    "formula": 1080,
+    "kappa_cal": 7.333333333333333
+   },
+   "comparators_trip": {
+    "synthesized_toffoli_equiv": 1770,
+    "formula": 60,
+    "kappa_cal": 29.5
+   },
+   "served_load_accumulation": {
+    "synthesized_toffoli_equiv": 90,
+    "formula": 24,
+    "kappa_cal": 3.75
+   },
+   "qrom_sensitivity_lookup": {
+    "synthesized_toffoli_equiv": 896,
+    "formula": 64,
+    "kappa_cal": 14.0
+   },
+   "threshold": {
+    "synthesized_toffoli_equiv": 44,
+    "formula": 6,
+    "kappa_cal": 7.333333333333333
+   },
+   "bennett_factor_measured": 2.0,
+   "small_inverse": {
+    "kappa_cal": null,
+    "status": "NOT CALIBRATED: A2 has no reversible small inverse (see module docstring)"
+   }
+  },
+  "counts_by_primitive": {
+   "status_init": {
+    "gates": 10,
+    "toffoli_equiv": 0,
+    "by_n_controls": {
+     "1": 5,
+     "0": 5
+    }
+   },
+   "island_detection": {
+    "gates": 255,
+    "toffoli_equiv": 324,
+    "by_n_controls": {
+     "0": 39,
+     "2": 180,
+     "4": 18,
+     "3": 18
+    }
+   },
+   "load_gating": {
+    "gates": 6,
+    "toffoli_equiv": 0,
+    "by_n_controls": {
+     "1": 6
+    }
+   },
+   "qrom_sensitivity_lookup": {
+    "gates": 690,
+    "toffoli_equiv": 896,
+    "by_n_controls": {
+     "5": 128,
+     "1": 562
+    }
+   },
+   "multiplier_flow_update": {
+    "gates": 14220,
+    "toffoli_equiv": 7920,
+    "by_n_controls": {
+     "2": 7920,
+     "1": 6300
+    }
+   },
+   "comparators_trip": {
+    "gates": 4956,
+    "toffoli_equiv": 1770,
+    "by_n_controls": {
+     "1": 2600,
+     "0": 586,
+     "2": 1770
+    }
+   },
+   "status_update": {
+    "gates": 10,
+    "toffoli_equiv": 10,
+    "by_n_controls": {
+     "2": 10
+    }
+   },
+   "served_load_accumulation": {
+    "gates": 159,
+    "toffoli_equiv": 90,
+    "by_n_controls": {
+     "0": 6,
+     "2": 90,
+     "1": 63
+    }
+   },
+   "threshold": {
+    "gates": 125,
+    "toffoli_equiv": 44,
+    "by_n_controls": {
+     "1": 65,
+     "0": 16,
+     "2": 44
+    }
+   },
+   "phase_kickback": {
+    "gates": 1,
+    "toffoli_equiv": 0,
+    "by_n_controls": {
+     "1": 1
+    }
+   },
+   "bennett_uncompute": {
+    "gates": 20431,
+    "toffoli_equiv": 11054,
+    "by_n_controls": {
+     "1": 9601,
+     "0": 652,
+     "2": 10014,
+     "3": 18,
+     "4": 18,
+     "5": 128
+    }
+   },
+   "TOTAL": {
+    "gates": 40863,
+    "toffoli_equiv": 22108
+   }
+  },
+  "kappa_verdicts": {
+   "island_detection": "kappa < 0.5: V2 formula OVERESTIMATES this primitive",
+   "multiplier_flow_update": "kappa >> 1: V2 formula UNDERESTIMATES this primitive (V2 E14 failure interpretation: oracle cost underestimated)",
+   "comparators_trip": "kappa >> 1: V2 formula UNDERESTIMATES this primitive (V2 E14 failure interpretation: oracle cost underestimated)",
+   "served_load_accumulation": "kappa >> 1: V2 formula UNDERESTIMATES this primitive (V2 E14 failure interpretation: oracle cost underestimated)",
+   "qrom_sensitivity_lookup": "kappa >> 1: V2 formula UNDERESTIMATES this primitive (V2 E14 failure interpretation: oracle cost underestimated)",
+   "threshold": "kappa >> 1: V2 formula UNDERESTIMATES this primitive (V2 E14 failure interpretation: oracle cost underestimated)"
+  },
+  "primitive_scaling_vs_b": {
+   "4": {
+    "multiply_acc": 112,
+    "kappa_mult_vs_b2": 7.0,
+    "comparator": 28,
+    "kappa_cmp_vs_b": 7.0,
+    "adder": 10,
+    "kappa_add_vs_b": 2.5
+   },
+   "6": {
+    "multiply_acc": 264,
+    "kappa_mult_vs_b2": 7.333333333333333,
+    "comparator": 44,
+    "kappa_cmp_vs_b": 7.333333333333333,
+    "adder": 18,
+    "kappa_add_vs_b": 3.0
+   },
+   "8": {
+    "multiply_acc": 480,
+    "kappa_mult_vs_b2": 7.5,
+    "comparator": 60,
+    "kappa_cmp_vs_b": 7.5,
+    "adder": 26,
+    "kappa_add_vs_b": 3.25
+   },
+   "12": {
+    "multiply_acc": 1104,
+    "kappa_mult_vs_b2": 7.666666666666667,
+    "comparator": 92,
+    "kappa_cmp_vs_b": 7.666666666666667,
+    "adder": 42,
+    "kappa_add_vs_b": 3.5
+   },
+   "16": {
+    "multiply_acc": 1984,
+    "kappa_mult_vs_b2": 7.75,
+    "comparator": 124,
+    "kappa_cmp_vs_b": 7.75,
+    "adder": 58,
+    "kappa_add_vs_b": 3.625
+   }
+  },
+  "float_engine_agreement": {
+   "n": 32,
+   "label_agreement": 1.0,
+   "rows": [
+    {
+     "x": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "S_float_engine": 0.0,
+     "S_fixed_point_A2": 0.0,
+     "label_float": false,
+     "label_A2": false
+    },
+    {
+     "x": [
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     "S_float_engine": 0.0,
+     "S_fixed_point_A2": 0.0,
+     "label_float": false,
+     "label_A2": false
+    },
+    {
+     "x": [
+      0,
+      1,
+      0,
+      0,
+      0
+     ],
+     "S_float_engine": 0.0,
+     "S_fixed_point_A2": 0.0,
+     "label_float": false,
+     "label_A2": false
+    },
+    {
+     "x": [
+      1,
+      1,
+      0,
+      0,
+      0
+     ],
+     "S_float_engine": 0.4,
+     "S_fixed_point_A2": 0.4,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     "S_float_engine": 0.0,
+     "S_fixed_point_A2": 0.0,
+     "label_float": false,
+     "label_A2": false
+    },
+    {
+     "x": [
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "S_float_engine": 0.8,
+     "S_fixed_point_A2": 0.8,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      0,
+      1,
+      1,
+      0,
+      0
+     ],
+     "S_float_engine": 0.0,
+     "S_fixed_point_A2": 0.0,
+     "label_float": false,
+     "label_A2": false
+    },
+    {
+     "x": [
+      1,
+      1,
+      1,
+      0,
+      0
+     ],
+     "S_float_engine": 0.4,
+     "S_fixed_point_A2": 0.4,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      0,
+      0,
+      0,
+      1,
+      0
+     ],
+     "S_float_engine": 0.0,
+     "S_fixed_point_A2": 0.0,
+     "label_float": false,
+     "label_A2": false
+    },
+    {
+     "x": [
+      1,
+      0,
+      0,
+      1,
+      0
+     ],
+     "S_float_engine": 1.0,
+     "S_fixed_point_A2": 1.0,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      0,
+      1,
+      0,
+      1,
+      0
+     ],
+     "S_float_engine": 0.6,
+     "S_fixed_point_A2": 0.6,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      1,
+      1,
+      0,
+      1,
+      0
+     ],
+     "S_float_engine": 1.0,
+     "S_fixed_point_A2": 1.0,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      0,
+      0,
+      1,
+      1,
+      0
+     ],
+     "S_float_engine": 0.19999999999999996,
+     "S_fixed_point_A2": 0.19999999999999996,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      1,
+      0,
+      1,
+      1,
+      0
+     ],
+     "S_float_engine": 1.0,
+     "S_fixed_point_A2": 1.0,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      0,
+      1,
+      1,
+      1,
+      0
+     ],
+     "S_float_engine": 0.19999999999999996,
+     "S_fixed_point_A2": 0.19999999999999996,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      1,
+      1,
+      1,
+      1,
+      0
+     ],
+     "S_float_engine": 0.6,
+     "S_fixed_point_A2": 0.6,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "S_float_engine": 0.0,
+     "S_fixed_point_A2": 0.0,
+     "label_float": false,
+     "label_A2": false
+    },
+    {
+     "x": [
+      1,
+      0,
+      0,
+      0,
+      1
+     ],
+     "S_float_engine": 1.0,
+     "S_fixed_point_A2": 1.0,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      0,
+      1,
+      0,
+      0,
+      1
+     ],
+     "S_float_engine": 0.0,
+     "S_fixed_point_A2": 0.0,
+     "label_float": false,
+     "label_A2": false
+    },
+    {
+     "x": [
+      1,
+      1,
+      0,
+      0,
+      1
+     ],
+     "S_float_engine": 0.4,
+     "S_fixed_point_A2": 0.4,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "S_float_engine": 0.8,
+     "S_fixed_point_A2": 0.8,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      1,
+      0,
+      1,
+      0,
+      1
+     ],
+     "S_float_engine": 0.8,
+     "S_fixed_point_A2": 0.8,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      0,
+      1,
+      1,
+      0,
+      1
+     ],
+     "S_float_engine": 0.4,
+     "S_fixed_point_A2": 0.4,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      1,
+      1,
+      1,
+      0,
+      1
+     ],
+     "S_float_engine": 0.8,
+     "S_fixed_point_A2": 0.8,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      0,
+      0,
+      0,
+      1,
+      1
+     ],
+     "S_float_engine": 1.0,
+     "S_fixed_point_A2": 1.0,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      1,
+      0,
+      0,
+      1,
+      1
+     ],
+     "S_float_engine": 1.0,
+     "S_fixed_point_A2": 1.0,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      0,
+      1,
+      0,
+      1,
+      1
+     ],
+     "S_float_engine": 0.6,
+     "S_fixed_point_A2": 0.6,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      1,
+      1,
+      0,
+      1,
+      1
+     ],
+     "S_float_engine": 1.0,
+     "S_fixed_point_A2": 1.0,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      0,
+      0,
+      1,
+      1,
+      1
+     ],
+     "S_float_engine": 1.0,
+     "S_fixed_point_A2": 1.0,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      1,
+      0,
+      1,
+      1,
+      1
+     ],
+     "S_float_engine": 1.0,
+     "S_fixed_point_A2": 1.0,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      0,
+      1,
+      1,
+      1,
+      1
+     ],
+     "S_float_engine": 0.6,
+     "S_fixed_point_A2": 0.6,
+     "label_float": true,
+     "label_A2": true
+    },
+    {
+     "x": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "S_float_engine": 1.0,
+     "S_fixed_point_A2": 1.0,
+     "label_float": true,
+     "label_A2": true
+    }
+   ],
+   "note": "differences come from b=6 fixed point (1/8 p.u. lsb) and the engine's round/termination semantics; the A2 circuit is EXACT against its own fixed-point predicate"
+  },
+  "full_grover_on_A2": "NOT RUN: 444 qubits exceeds statevector reach (V2: <= ~30); A2 is validated through exhaustive basis simulation and the O1 chain",
+  "synthesis_note": "textbook synthesis (VBE ripple-carry adders, masked controlled adds, shift-and-add multipliers, naive QROM, local uncompute inside comparators); kappa therefore calibrates THIS synthesis, an upper-end reference -- optimised arithmetic would lower it"
+ },
+ "timing": {},
+ "parts": [
+  {
+   "name": "A2_exhaustive_verification",
+   "status": "EXECUTED",
+   "data_status": "NO_GRID_DATA",
+   "kind": "SYNTHESIZED",
+   "reason": "",
+   "dataset": null
+  },
+  {
+   "name": "kappa_calibration_per_primitive",
+   "status": "EXECUTED",
+   "data_status": "NO_GRID_DATA",
+   "kind": "SYNTHESIZED",
+   "reason": "",
+   "dataset": null
+  },
+  {
+   "name": "float_engine_O1_link",
+   "status": "EXECUTED",
+   "data_status": "NO_GRID_DATA",
+   "kind": "HAND_SOLVED",
+   "reason": "",
+   "dataset": null
+  }
+ ]
+}

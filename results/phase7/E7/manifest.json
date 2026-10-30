@@ -1,0 +1,265 @@
+{
+ "experiment_id": "E7",
+ "name": "Classical comparison",
+ "v2_section": "15; 18 E7",
+ "priority": "M",
+ "status": "EXECUTED",
+ "data_status": "OFFICIAL_DATA",
+ "evidence_label": "[EXECUTED] [MEASURED]",
+ "parts": [
+  {
+   "name": "classical_dc[ieee14,k=2]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "classical_dc[ieee14,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "classical_dc[ieee14,k=4]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "classical_dc[ieee30,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee30",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "classical_dc[ieee30,k=4]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee30",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "classical_dc[ieee118,k=2]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee118",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "classical_dc[ieee118,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee118",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "classical_ac[ieee14,k=2]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "classical_ac[ieee14,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "classical_ac[ieee14,k=4]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "classical_ac[ieee30,k=3]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee30",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "classical_ac[ieee118,k=2]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee118",
+   "reason": "",
+   "label": "[MEASURED]"
+  }
+ ],
+ "config": {
+  "file": "doomsday/experiments/specs.py",
+  "params": {
+   "seeds": 50,
+   "tuning_seeds": 20,
+   "ac_seeds": 20
+  },
+  "datasets": [
+   {
+    "name": "ieee14",
+    "role": "pre_registered"
+   },
+   {
+    "name": "ieee30",
+    "role": "pre_registered"
+   },
+   {
+    "name": "ieee118",
+    "role": "pre_registered"
+   }
+  ],
+  "config_hash": "f07a11cdb42fd25801780bb08f777adf112a5da44f7fb86ab4953b2c0dd1aebe",
+  "base_config_hash": "15ac98ee0c4a01f566b427789c247b0c9519ff736a6f65d83c76aec60810cc68"
+ },
+ "datasets": {
+  "ieee118": {
+   "name": "ieee118",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "bc2e6f22b4b9e776572885ee4b50e4f4ab2ee0c5577e9126e86d906f14c4b5f7",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  },
+  "ieee14": {
+   "name": "ieee14",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "2ffc4e1b734ae6c5e92dbe68b4e36010ed695a4bbcc4d065c74c4fbc39fcf3c1",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  },
+  "ieee30": {
+   "name": "ieee30",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "3d9030311259b553be85d02336b7e1bcb24ec04775bee6671bdb62d18e4e2137",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  }
+ },
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49
+ ],
+ "parameters_and_stopping_conditions": {
+  "seeds": 50,
+  "ac_seeds": 20,
+  "tuning_seeds": 20
+ },
+ "accounting": {
+  "classical_function_evaluations": "unique (k,set) evaluations per run (V2 15.2)",
+  "quantum_oracle_calls_emulated": null,
+  "classical_verification_calls": null,
+  "preprocessing_evaluations": null,
+  "estimated_quantum_runtime_s": null,
+  "notes": "MILP: solver calls + re-evaluations; ML: n_train + T"
+ },
+ "limitations": [
+  "Search runs on truth-table oracles: runtime_s excludes the oracle; estimated_wall_clock adds unique evaluations x E1 mean t_c (derived, machine-specific).",
+  "Hyper-parameters tuned once on the held-out pair (IEEE-30, k=2, DC), excluded from comparison tables.",
+  "Budget rule: budget = ceil(0.5 N) unique evaluations if N <= 1e5, else ceil(50 sqrt(N)) (compute cap, stated)."
+ ],
+ "acceptance_criteria": [],
+ "implementation": {
+  "package_version": "0.1.0",
+  "source_sha256": "7aa89f249d7ff9af20dc4cd910a82a49a712ef7f7461c07b77d7b3b8d5966b8f"
+ },
+ "environment": {
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v153-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1",
+  "matplotlib": "3.11.2",
+  "doomsday": "0.1.0",
+  "threads_env": {
+   "OMP_NUM_THREADS": "1",
+   "OPENBLAS_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "cpu_count": 2
+ },
+ "runtime_s": 1727.7545805869995,
+ "outputs": {
+  "results/phase7/E7/result.json": "3e62fa85560aace393e41cf51bb5ab98e1f5ee05cf4a124f15c717a5a5715038"
+ },
+ "result_digest": "cc6b848d8c3f0098720fe999821b376edc4a29cc5ddea6a66b039314898cd207",
+ "generated_utc": "2026-10-23T16:02:36Z"
+}

@@ -1,0 +1,143 @@
+{
+ "experiment_id": "E1",
+ "name": "Runtime profile",
+ "v2_section": "18 E1; 6.3",
+ "priority": "M",
+ "status": "EXECUTED",
+ "data_status": "OFFICIAL_DATA",
+ "evidence_label": "[EXECUTED] [MEASURED]",
+ "parts": [
+  {
+   "name": "runtime[ieee14]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee14",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "runtime[ieee30]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee30",
+   "reason": "",
+   "label": "[MEASURED]"
+  },
+  {
+   "name": "runtime[ieee118]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "dataset": "ieee118",
+   "reason": "",
+   "label": "[MEASURED]"
+  }
+ ],
+ "config": {
+  "file": "doomsday/experiments/specs.py",
+  "params": {},
+  "datasets": [
+   {
+    "name": "ieee14",
+    "role": "pre_registered"
+   },
+   {
+    "name": "ieee30",
+    "role": "pre_registered"
+   },
+   {
+    "name": "ieee118",
+    "role": "pre_registered"
+   }
+  ],
+  "config_hash": "22f912d627340bedc72fdafe1df154cbac569ec143273c25767f690bab1ee1d3",
+  "base_config_hash": "15ac98ee0c4a01f566b427789c247b0c9519ff736a6f65d83c76aec60810cc68"
+ },
+ "datasets": {
+  "ieee118": {
+   "name": "ieee118",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "bc2e6f22b4b9e776572885ee4b50e4f4ab2ee0c5577e9126e86d906f14c4b5f7",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  },
+  "ieee14": {
+   "name": "ieee14",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "2ffc4e1b734ae6c5e92dbe68b4e36010ed695a4bbcc4d065c74c4fbc39fcf3c1",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  },
+  "ieee30": {
+   "name": "ieee30",
+   "available": true,
+   "verified": true,
+   "provenance_status": "official_matpower",
+   "file_sha256": "3d9030311259b553be85d02336b7e1bcb24ec04775bee6671bdb62d18e4e2137",
+   "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594"
+  }
+ },
+ "seeds": [
+  1
+ ],
+ "parameters_and_stopping_conditions": {
+  "k": 3,
+  "env": {
+   "python": "3.13.17",
+   "platform": "Linux-6.18.44-fc-v153-x86_64-with-glibc2.39",
+   "numpy": "2.4.6",
+   "scipy": "1.18.1",
+   "sklearn": "1.9.1",
+   "matplotlib": "3.11.2",
+   "doomsday": "0.1.0",
+   "threads_env": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null
+   },
+   "cpu_count": 2
+  }
+ },
+ "accounting": {
+  "classical_function_evaluations": null,
+  "quantum_oracle_calls_emulated": null,
+  "classical_verification_calls": null,
+  "preprocessing_evaluations": null,
+  "estimated_quantum_runtime_s": null,
+  "notes": ""
+ },
+ "limitations": [
+  "Single-process scalar Python (CascadeEngine.run), one evaluation at a time; timings are machine-specific.",
+  "High-severity sets are drawn from the top 1% of the DC k=3 table, timed in both DC and AC."
+ ],
+ "acceptance_criteria": [],
+ "implementation": {
+  "package_version": "0.1.0",
+  "source_sha256": "0859ee9c4e81d558920f1c5307078ea51f1485d45977a2f4b128a39b01a6c5bb"
+ },
+ "environment": {
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v153-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1",
+  "matplotlib": "3.11.2",
+  "doomsday": "0.1.0",
+  "threads_env": {
+   "OMP_NUM_THREADS": "1",
+   "OPENBLAS_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "cpu_count": 2
+ },
+ "runtime_s": 997.4938923179998,
+ "outputs": {
+  "results/phase7/E1/result.json": "61de54ff1dfce260f012901c5f7354273a9a4cf4d61f5b23f645eefad7fd1910"
+ },
+ "result_digest": "404230a26c4d7b9c472b05501c4d1c2be9b9001cc4aa828c39c0557013c69824",
+ "generated_utc": "2026-10-23T13:17:56Z"
+}

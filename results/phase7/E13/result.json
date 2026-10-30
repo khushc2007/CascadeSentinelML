@@ -1,0 +1,18 @@
+{
+ "experiment_id": "E13",
+ "payload": {
+  "hardware_claimed": false,
+  "job_ids": []
+ },
+ "timing": {},
+ "parts": [
+  {
+   "name": "ibm_device_A1_toy",
+   "status": "NOT_RUN",
+   "data_status": "NO_GRID_DATA",
+   "kind": "NONE",
+   "reason": "no IBM Quantum credentials are configured in this environment (QISKIT_IBM_TOKEN unset), so no device job was submitted; E13 is OPTIONAL in V2 and is reported as NOT_RUN. A run needs an IBM Quantum account (QISKIT_IBM_TOKEN) and qiskit-ibm-runtime; device submission is not automated in this pipeline",
+   "dataset": null
+  }
+ ]
+}

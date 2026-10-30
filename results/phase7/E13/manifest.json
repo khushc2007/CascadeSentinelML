@@ -1,0 +1,67 @@
+{
+ "experiment_id": "E13",
+ "name": "Hardware run (A1 toy on an IBM device)",
+ "v2_section": "13.1; 18 E13",
+ "priority": "N [OPTIONAL]",
+ "status": "NOT_RUN",
+ "data_status": "NO_GRID_DATA",
+ "evidence_label": "[NOT_RUN]",
+ "parts": [
+  {
+   "name": "ibm_device_A1_toy",
+   "status": "NOT_RUN",
+   "data_status": "NO_GRID_DATA",
+   "kind": "NONE",
+   "dataset": null,
+   "reason": "no IBM Quantum credentials are configured in this environment (QISKIT_IBM_TOKEN unset), so no device job was submitted; E13 is OPTIONAL in V2 and is reported as NOT_RUN. A run needs an IBM Quantum account (QISKIT_IBM_TOKEN) and qiskit-ibm-runtime; device submission is not automated in this pipeline",
+   "label": "[NOT_RUN] no IBM Quantum credentials are configured in this environment (QISKIT_IBM_TOKEN unset), so no device job was submitted; E13 is OPTIONAL in V2 and is reported as NOT_RUN. A run needs an IBM Quantum account (QISKIT_IBM_TOKEN) and qiskit-ibm-runtime; device submission is not automated in this pipeline"
+  }
+ ],
+ "config": {
+  "file": "doomsday/experiments/specs.py",
+  "params": {},
+  "datasets": [],
+  "config_hash": "5111a49f9ebb6feee9fa91431407ad7a3e4dd8745fc57bb5390a7d5fd0c95cef",
+  "base_config_hash": "15ac98ee0c4a01f566b427789c247b0c9519ff736a6f65d83c76aec60810cc68"
+ },
+ "datasets": {},
+ "seeds": [],
+ "parameters_and_stopping_conditions": {},
+ "accounting": {
+  "classical_function_evaluations": null,
+  "quantum_oracle_calls_emulated": null,
+  "classical_verification_calls": null,
+  "preprocessing_evaluations": null,
+  "estimated_quantum_runtime_s": null,
+  "notes": ""
+ },
+ "limitations": [
+  "No hardware result exists or is claimed."
+ ],
+ "acceptance_criteria": [],
+ "implementation": {
+  "package_version": "0.1.0",
+  "source_sha256": "e4559aeefca2c8b281c5910b6a0a18d7a23e4bf84a8fee1fe188e8ac84411adf"
+ },
+ "environment": {
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v153-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1",
+  "matplotlib": "3.11.2",
+  "doomsday": "0.1.0",
+  "threads_env": {
+   "OMP_NUM_THREADS": null,
+   "OPENBLAS_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "cpu_count": 2
+ },
+ "runtime_s": 1.0148481469987018,
+ "outputs": {
+  "results/phase7/E13/result.json": "53276459d36ae03284cdefd01a92aec31e5086186c857ada3d3682dbb9c2caaf"
+ },
+ "result_digest": "0b4955259650e39bd871c73fdf2bac5e7d2074e8c9da1410f3516734d7fad089",
+ "generated_utc": "2026-10-23T16:04:38Z"
+}

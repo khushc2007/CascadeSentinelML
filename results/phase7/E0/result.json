@@ -1,0 +1,308 @@
+{
+ "experiment_id": "E0",
+ "payload": {
+  "tolerance_pu": 1e-06,
+  "hand_solved": {
+   "files": [
+    "tests/unit/test_dc.py",
+    "tests/unit/test_ac.py",
+    "tests/unit/test_cascade_known.py",
+    "tests/unit/test_cascade_invariants.py",
+    "tests/unit/test_dc_sensitivities.py",
+    "tests/unit/test_security.py"
+   ],
+   "n": 42,
+   "passed": 42,
+   "cases": [
+    {
+     "name": "tests.unit.test_dc::test_U1_hand_solved_triangle",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_dc::test_dc_outage_chain_hand_solved",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_dc::test_nodal_balance_case14",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_dc::test_islanded_network_rejected",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_dc::test_dc_slack_loss_handling_resolution_C",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_ac::test_U2_two_bus_analytic_round_trip",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_ac::test_case14_matches_published_solution",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_ac::test_case14_internal_consistency_bus_balance",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_ac::test_jacobian_matches_finite_difference",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_ac::test_non_convergence_reported_not_raised",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_ac::test_ac_vs_dc_agree_roughly_on_lightly_loaded_triangle",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_ac::test_deterministic_repeat",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_ac::test_islanded_ac_rejected",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_ac::test_phase_shifter_and_tap_against_closed_form",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_known::test_U9_two_round_cascade_with_redispatch_curtailment_trip_dead_island",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_known::test_dc_round0_loadings_exact_hand_values",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_known::test_no_upward_redispatch_variant",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_known::test_trip_policies_simultaneous_vs_sequential",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_known::test_exhausted_state_flagged_and_uses_last_solved_round",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_known::test_parallel_lines_independent_trip_logic",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_known::test_isolation_only_zero_cascade_loss_and_strict_overload_tolerance",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_known::test_cascade_driven_case_s0_zero_c_positive",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_known::test_pmin_violation_flagged",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_known::test_invalid_outage_rejected",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_known::test_U11_ac_ladder_constructed_infeasible_case_deterministic_and_flagged",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_known::test_overload_tolerance_band_1e9_is_honoured",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_known::test_sequential_policy_picks_argmax_not_lowest_index",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_known::test_sequential_ties_break_to_lowest_index",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_invariants::test_U10_invariants_n1_n2_dc",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_invariants::test_n1_all_stable_zero_severity_both_engines",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_invariants::test_no_outage_reproduces_base_flows_and_loadings",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_invariants::test_U6_island_balance_conservation_all_n2_dc_and_sample_ac",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_invariants::test_fast_woodbury_path_equals_reference_all_n2_and_samples_n3",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_invariants::test_determinism_repeat_runs_identical",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_cascade_invariants::test_json_serialisable_result",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_dc_sensitivities::test_U3_lodf_matches_full_resolve_all_n1",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_dc_sensitivities::test_U4_woodbury_matches_resolve_k_up_to_6",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_dc_sensitivities::test_U5_singularity_coincides_with_disconnection",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_dc_sensitivities::test_woodbury_refuses_singular_instead_of_dividing",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_security::test_n1_check_machinery_known_answer_triangle",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_security::test_n1_secure_when_ratings_large",
+     "outcome": "passed"
+    },
+    {
+     "name": "tests.unit.test_security::test_bridge_outages_are_tagged_not_counted",
+     "outcome": "passed"
+    }
+   ],
+   "pass": true
+  },
+  "reference": {
+   "ieee14": {
+    "reference_solver": "PYPOWER 5.1 runpf/rundcpf (MATPOWER port)",
+    "base_ac": {
+     "dVm": 6.661338147750939e-16,
+     "dVa_rad": 2.220446049250313e-16,
+     "dPf_pu": 1.6475709685437323e-15,
+     "dQf_pu": 7.052136652418995e-15,
+     "converged_both": true
+    },
+    "n1_ac": {
+     "n_outages": 19,
+     "max_abs_diff": {
+      "dVm": 1.290079154614432e-13,
+      "dVa_rad": 1.1945999744966684e-13,
+      "dPf_pu": 3.7422509535645074e-13,
+      "dQf_pu": 2.7633006993710297e-13
+     },
+     "nonconverged": []
+    },
+    "dc_vs_pypower_taps_shifts_neglected_pu": 1.7053025658242404e-15,
+    "dc_vs_pypower_matpower_convention_pu": 0.00703423311804599,
+    "dc_convention_note": "V2 6.1 DC uses b=1/x (taps/phase shifts neglected); MATPOWER's DC uses b=1/(x*tap) plus shift injections. The second number is that convention difference, not an error.",
+    "kcl_residual_pu": 1.3500311979441904e-15,
+    "island_balance_residual_pu_300_random_k3": 5.684341886080802e-16,
+    "deterministic_replay_300": true,
+    "pass": true
+   },
+   "ieee30": {
+    "reference_solver": "PYPOWER 5.1 runpf/rundcpf (MATPOWER port)",
+    "base_ac": {
+     "dVm": 1.1102230246251565e-15,
+     "dVa_rad": 7.979727989493313e-16,
+     "dPf_pu": 4.440892098500626e-15,
+     "dQf_pu": 1.3677947663381929e-14,
+     "converged_both": true
+    },
+    "n1_ac": {
+     "n_outages": 38,
+     "max_abs_diff": {
+      "dVm": 2.3314683517128287e-15,
+      "dVa_rad": 3.427813588530171e-15,
+      "dPf_pu": 8.419931418757188e-15,
+      "dQf_pu": 2.1245227799226997e-14
+     },
+     "nonconverged": []
+    },
+    "dc_vs_pypower_taps_shifts_neglected_pu": 2.353672812205332e-16,
+    "dc_vs_pypower_matpower_convention_pu": 2.353672812205332e-16,
+    "dc_convention_note": "V2 6.1 DC uses b=1/x (taps/phase shifts neglected); MATPOWER's DC uses b=1/(x*tap) plus shift injections. The second number is that convention difference, not an error.",
+    "kcl_residual_pu": 1.1013412404281553e-15,
+    "island_balance_residual_pu_300_random_k3": 2.842170943040401e-16,
+    "deterministic_replay_300": true,
+    "pass": true
+   },
+   "ieee118": {
+    "reference_solver": "PYPOWER 5.1 runpf/rundcpf (MATPOWER port)",
+    "base_ac": {
+     "dVm": 9.992007221626409e-15,
+     "dVa_rad": 1.9748092050519972e-14,
+     "dPf_pu": 1.0118128557223827e-13,
+     "dQf_pu": 2.3803181647963356e-13,
+     "converged_both": true
+    },
+    "n1_ac": {
+     "n_outages": 177,
+     "max_abs_diff": {
+      "dVm": 4.263256414560601e-14,
+      "dVa_rad": 5.812017533912694e-14,
+      "dPf_pu": 3.1434410630026834e-13,
+      "dQf_pu": 5.74544856135617e-13
+     },
+     "nonconverged": []
+    },
+    "dc_vs_pypower_taps_shifts_neglected_pu": 1.9468870959826747e-14,
+    "dc_vs_pypower_matpower_convention_pu": 0.023649649691763273,
+    "dc_convention_note": "V2 6.1 DC uses b=1/x (taps/phase shifts neglected); MATPOWER's DC uses b=1/(x*tap) plus shift injections. The second number is that convention difference, not an error.",
+    "kcl_residual_pu": 9.094947017729283e-15,
+    "island_balance_residual_pu_300_random_k3": 4.638422979041934e-13,
+    "deterministic_replay_300": true,
+    "pass": true
+   }
+  },
+  "verdict": "PASS: twin matches hand-solved cases and the reference solver to tolerance"
+ },
+ "timing": {},
+ "parts": [
+  {
+   "name": "hand_solved_toy_grids_U1_U2_U9_U11",
+   "status": "EXECUTED",
+   "data_status": "NO_GRID_DATA",
+   "kind": "HAND_SOLVED",
+   "reason": "",
+   "dataset": null
+  },
+  {
+   "name": "reference_and_conservation[ieee14]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "reason": "",
+   "dataset": "ieee14"
+  },
+  {
+   "name": "reference_and_conservation[ieee30]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "reason": "",
+   "dataset": "ieee30"
+  },
+  {
+   "name": "reference_and_conservation[ieee118]",
+   "status": "EXECUTED",
+   "data_status": "OFFICIAL_DATA",
+   "kind": "MEASURED",
+   "reason": "",
+   "dataset": "ieee118"
+  }
+ ]
+}

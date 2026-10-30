@@ -1,0 +1,5 @@
+{
+ "pinned_code_version": "f54aba7ce092ad3f2d9d79e7ba0f1ee9ae236cd7a0fa04ac895ff07f48c9b0de",
+ "commit": "cf259bb",
+ "reason": "E11 started at commit cf259bb and was restarted after a background time limit; its truth tables were reused by pinning the oracle namespace to cf259bb's code version. git diff cf259bb -- doomsday/gridtwin doomsday/config.py is empty; doomsday/oracle differs only in table generation/locking (same oracle.evaluate path)."
+}

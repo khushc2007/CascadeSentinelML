@@ -1,0 +1,101 @@
+{
+ "experiment_id": "E14",
+ "name": "Micro-oracle synthesis and calibration",
+ "v2_section": "13.4; 18 E14",
+ "priority": "S (high value)",
+ "status": "EXECUTED",
+ "data_status": "NO_GRID_DATA",
+ "evidence_label": "[EXECUTED] [MEASURED] against hand-solved/analytic references; [MEASURED] gate counts of a synthesized reversible circuit, verified by exhaustive basis-state simulation",
+ "parts": [
+  {
+   "name": "A2_exhaustive_verification",
+   "status": "EXECUTED",
+   "data_status": "NO_GRID_DATA",
+   "kind": "SYNTHESIZED",
+   "dataset": null,
+   "reason": "",
+   "label": "[MEASURED] gate counts of a synthesized reversible circuit, verified by exhaustive basis-state simulation"
+  },
+  {
+   "name": "kappa_calibration_per_primitive",
+   "status": "EXECUTED",
+   "data_status": "NO_GRID_DATA",
+   "kind": "SYNTHESIZED",
+   "dataset": null,
+   "reason": "",
+   "label": "[MEASURED] gate counts of a synthesized reversible circuit, verified by exhaustive basis-state simulation"
+  },
+  {
+   "name": "float_engine_O1_link",
+   "status": "EXECUTED",
+   "data_status": "NO_GRID_DATA",
+   "kind": "HAND_SOLVED",
+   "dataset": null,
+   "reason": "",
+   "label": "[MEASURED] against hand-solved/analytic references"
+  }
+ ],
+ "config": {
+  "file": "doomsday/experiments/specs.py",
+  "params": {},
+  "datasets": [],
+  "config_hash": "5111a49f9ebb6feee9fa91431407ad7a3e4dd8745fc57bb5390a7d5fd0c95cef",
+  "base_config_hash": "15ac98ee0c4a01f566b427789c247b0c9519ff736a6f65d83c76aec60810cc68"
+ },
+ "datasets": {},
+ "seeds": [],
+ "parameters_and_stopping_conditions": {
+  "bits": 6,
+  "rounds": 2
+ },
+ "accounting": {
+  "classical_function_evaluations": null,
+  "quantum_oracle_calls_emulated": null,
+  "classical_verification_calls": null,
+  "preprocessing_evaluations": null,
+  "estimated_quantum_runtime_s": null,
+  "notes": ""
+ },
+ "limitations": [
+  "Toy scale (4 buses, 5 branches, b=6, R=2); the per-topology QROM replaces V2's small inverse, which stays UNCALIBRATED.",
+  "Toffoli-equivalent convention: CCX=1, MCX(c>=3)=2c-3; Clifford gates free."
+ ],
+ "acceptance_criteria": [
+  {
+   "criterion": "kappa_cal within (0.5, 2.0)",
+   "per_primitive": {
+    "island_detection": "kappa < 0.5: V2 formula OVERESTIMATES this primitive",
+    "multiplier_flow_update": "kappa >> 1: V2 formula UNDERESTIMATES this primitive (V2 E14 failure interpretation: oracle cost underestimated)",
+    "comparators_trip": "kappa >> 1: V2 formula UNDERESTIMATES this primitive (V2 E14 failure interpretation: oracle cost underestimated)",
+    "served_load_accumulation": "kappa >> 1: V2 formula UNDERESTIMATES this primitive (V2 E14 failure interpretation: oracle cost underestimated)",
+    "qrom_sensitivity_lookup": "kappa >> 1: V2 formula UNDERESTIMATES this primitive (V2 E14 failure interpretation: oracle cost underestimated)",
+    "threshold": "kappa >> 1: V2 formula UNDERESTIMATES this primitive (V2 E14 failure interpretation: oracle cost underestimated)"
+   }
+  }
+ ],
+ "implementation": {
+  "package_version": "0.1.0",
+  "source_sha256": "2aee629a937a6a7e9df72b99b1797196c02742859f8363ed01522f018d0b641f"
+ },
+ "environment": {
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v153-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1",
+  "matplotlib": "3.11.2",
+  "doomsday": "0.1.0",
+  "threads_env": {
+   "OMP_NUM_THREADS": "1",
+   "OPENBLAS_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  },
+  "cpu_count": 2
+ },
+ "runtime_s": 5.183780030999969,
+ "outputs": {
+  "results/phase7/E14/result.json": "9803139d1c19b3fec115adb5e75cd09a506d5af1cbe924d76d0a009df2187944"
+ },
+ "result_digest": "c4807c3251b040605366b25cd39ddc2682576781a4d283b4004ba32504386cb7",
+ "generated_utc": "2026-10-23T10:12:16Z"
+}
