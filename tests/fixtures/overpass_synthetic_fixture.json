@@ -1,0 +1,178 @@
+{
+ "_comment": "SYNTHETIC TEST FIXTURE for tests only. These are NOT real Bengaluru assets: names start with TEST, coordinates are arbitrary points inside the query box, and the file must never be shipped as data.",
+ "version": 0.6,
+ "generator": "test fixture",
+ "osm3s": {
+  "timestamp_osm_base": "2026-01-01T00:00:00Z",
+  "copyright": "synthetic"
+ },
+ "elements": [
+  {
+   "type": "node",
+   "id": 900000001,
+   "lat": 12.98,
+   "lon": 77.58,
+   "tags": {
+    "power": "substation",
+    "name": "TEST Alpha",
+    "voltage": "220000;66000",
+    "operator": "TEST-OP-1",
+    "substation": "transmission"
+   }
+  },
+  {
+   "type": "way",
+   "id": 900000002,
+   "geometry": [
+    {
+     "lat": 13.02,
+     "lon": 77.62
+    },
+    {
+     "lat": 13.02,
+     "lon": 77.625
+    },
+    {
+     "lat": 13.025,
+     "lon": 77.625
+    },
+    {
+     "lat": 13.025,
+     "lon": 77.62
+    },
+    {
+     "lat": 13.02,
+     "lon": 77.62
+    }
+   ],
+   "tags": {
+    "power": "substation",
+    "name": "TEST Bravo",
+    "voltage": "66000",
+    "operator": "TEST-OP-2"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 900000003,
+   "bounds": {
+    "minlat": 12.9,
+    "minlon": 77.5,
+    "maxlat": 12.91,
+    "maxlon": 77.51
+   },
+   "members": [],
+   "tags": {
+    "power": "substation",
+    "voltage": "400000"
+   }
+  },
+  {
+   "type": "node",
+   "id": 900000004,
+   "lat": 13.1,
+   "lon": 77.7,
+   "tags": {
+    "power": "plant",
+    "name": "TEST Plant Charlie",
+    "plant:source": "solar"
+   }
+  },
+  {
+   "type": "way",
+   "id": 900000005,
+   "geometry": [
+    {
+     "lat": 12.98,
+     "lon": 77.58
+    },
+    {
+     "lat": 13.0,
+     "lon": 77.6
+    },
+    {
+     "lat": 13.02,
+     "lon": 77.62
+    }
+   ],
+   "tags": {
+    "power": "line",
+    "voltage": "220000",
+    "name": "TEST Line Delta",
+    "ref": "T-1"
+   }
+  },
+  {
+   "type": "way",
+   "id": 900000006,
+   "geometry": [
+    {
+     "lat": 12.95,
+     "lon": 77.55
+    },
+    {
+     "lat": 12.96,
+     "lon": 77.57
+    }
+   ],
+   "tags": {
+    "power": "line"
+   }
+  },
+  {
+   "type": "way",
+   "id": 900000007,
+   "geometry": [
+    {
+     "lat": 12.93,
+     "lon": 77.6
+    },
+    {
+     "lat": 12.94,
+     "lon": 77.61
+    }
+   ],
+   "tags": {
+    "power": "minor_line",
+    "voltage": "11000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 900000008,
+   "geometry": [
+    {
+     "lat": 12.97,
+     "lon": 77.63
+    },
+    {
+     "lat": 12.975,
+     "lon": 77.64
+    }
+   ],
+   "tags": {
+    "power": "cable",
+    "voltage": "66000",
+    "operator": "TEST-OP-2"
+   }
+  },
+  {
+   "type": "node",
+   "id": 900000009,
+   "lat": 12.99,
+   "lon": 77.59,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 900000010,
+   "lat": 12.99,
+   "lon": 77.59,
+   "tags": {
+    "amenity": "cafe"
+   }
+  }
+ ]
+}
