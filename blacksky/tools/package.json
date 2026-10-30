@@ -1,0 +1,7 @@
+{
+  "name": "blacksky-tools",
+  "private": true,
+  "description": "Development-only tools for BLACKSKY COMMAND (type checking). Not part of the deployed site.",
+  "scripts": { "typecheck": "tsc -p tsconfig.json" },
+  "devDependencies": { "typescript": "5.6.3" }
+}

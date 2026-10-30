@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "allowJs": true, "checkJs": false, "noEmit": true, "target": "es2022", "module": "es2022", "moduleResolution": "bundler",
+    "lib": ["es2022", "dom"], "strict": true, "noImplicitAny": false, "skipLibCheck": true, "types": []
+  },
+  "include": ["../site/js/sci/*.js", "../site/js/q/*.js"]
+}
